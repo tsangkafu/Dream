@@ -8,6 +8,7 @@ class Game:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
+        # title of the game
         pygame.display.set_caption("Dream")
         self.clock = pygame.time.Clock()
         self.level = Level()

@@ -1,15 +1,7 @@
-WIDTH = 720
-HEIGHT = 1280
+from map.medieval import *
+
+WIDTH = 800
+HEIGHT = 800
 FPS = 60
-
-MEDIEVAL_MAP = [
-
-]
-
-GANGSTER_MAP = [
-    
-]
-
-CYBERPUNK_MAP = [
-
-]
+# (720,1280) = 80
+TILESIZE = 80
