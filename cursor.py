@@ -3,8 +3,7 @@ import pygame
 import os
 
 class Cursor(pygame.sprite.Sprite):
-    def __init__(self, pos, groups):
-        super().__init__(groups)
+    def __init__(self, pos):
         # replace the cursor
         pygame.mouse.set_visible(False)
         # default cursor is a normal cursor

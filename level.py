@@ -13,7 +13,7 @@ class Level:
         self.visible_sprites = pygame.sprite.Group()
         self.empty_node_sprites = pygame.sprite.Group()
         self.create_map()
-        self.cursor = Cursor(pygame.mouse.get_pos(), [self.visible_sprites])
+        self.cursor = Cursor(pygame.mouse.get_pos())
 
     # will only be called once    
     def create_map(self):
@@ -31,14 +31,19 @@ class Level:
     def run(self):
         self.empty_node_sprites.draw(self.display_surface)
         self.visible_sprites.draw(self.display_surface)
-        
+
+        # initalize the cursor if not collided
         self.cursor.swap_cursor("normal")
+
         for empty_node in self.empty_node_sprites:
+            # if the empty node is collided with cursor position, switch the cursor
             if empty_node.rect.collidepoint(pygame.mouse.get_pos()):
                 self.cursor.swap_cursor("hand")
                 break
         
         self.empty_node_sprites.update()
+
+        # make player "move"
         self.visible_sprites.update()
 
         debug(self.player.direction)

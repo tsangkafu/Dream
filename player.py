@@ -31,6 +31,7 @@ class Player(pygame.sprite.Sprite):
     def move(self, speed):
         self.rect.center += self.direction * speed
     
+    # Overriding the update method
     def update(self):
         self.input()
         self.move(self.speed)

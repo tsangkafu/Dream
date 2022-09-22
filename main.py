@@ -32,6 +32,9 @@ class Game:
 
             self.level.run()
 
+            # refresh the cursor after the map and node have been generated
+            self.screen.blit(self.level.cursor.image, pygame.mouse.get_pos())
+
             pygame.display.update()
 
             self.clock.tick(FPS)
