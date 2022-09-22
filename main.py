@@ -13,8 +13,8 @@ class Game:
         # title of the game
         pygame.display.set_caption("Dream")
         self.clock = pygame.time.Clock()
+
         self.level = Level()
-        self.cursor = pygame.image.load(os.path.join("./graphics/cursor", "normal_cursor.png"))
 
     def run(self):
         while True:
@@ -23,16 +23,14 @@ class Game:
                     pygame.quit()
                     sys.exit()
 
+            # track the cursor
+            self.level.cursor.rect.center = pygame.mouse.get_pos()
+
             # fill screen with background
+            # put in the loop because 
             self.screen.blit(MEDIEVAL_BACKGROUND, (0,0))
 
             self.level.run()
-
-            # track the position of cursor
-            mx, my = pygame.mouse.get_pos()
-            # replace the cursor
-            pygame.mouse.set_visible(False)
-            self.screen.blit(self.cursor, (mx, my))
 
             pygame.display.update()
 
