@@ -5,6 +5,7 @@ from settings import *
 from level import Level
 from map.medieval import *
 from cursor import Cursor
+from node import *
 
 class Game:
     def __init__(self):
@@ -33,11 +34,9 @@ class Game:
                         if node.rect.collidepoint(pygame.mouse.get_pos()):
                             self.level.player.set_target(node.rect.topleft)
 
-            # for sprites in self.level.node_sprites:
-            #     pygame.draw.line(self.screen, (255,0,0), sprites.rect.center, self.level.player.rect.center, 5)
-
-
             self.level.run()
+
+            # draw line
 
             self.level.player.update()
 
