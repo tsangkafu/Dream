@@ -10,6 +10,7 @@ class Level:
     def __init__(self):
         # get the display surface
         self.display_surface = pygame.display.get_surface()
+        # including player, enemy
         self.visible_sprites = pygame.sprite.Group()
         self.empty_node_sprites = pygame.sprite.Group()
         self.create_map()
@@ -21,12 +22,15 @@ class Level:
             for j, col in enumerate(row):
                 x = j * TILESIZE
                 y = i * TILESIZE
-                # empty node
+                # empty nodes
                 if col == "N":
-                    Node((x, y), [self.empty_node_sprites])
+                    Node((x, y), "empty", [self.empty_node_sprites])
                 # player
                 if col == "P":
                     self.player = Player((x, y), [self.visible_sprites])
+                # emenies
+                if col == "E":
+                    Node((x, y), "enemy" ,[self.empty_node_sprites])
 
     def run(self):
         self.empty_node_sprites.draw(self.display_surface)
@@ -40,10 +44,5 @@ class Level:
             if empty_node.rect.collidepoint(pygame.mouse.get_pos()):
                 self.cursor.swap_cursor("hand")
                 break
-        
-        self.empty_node_sprites.update()
 
-        # make player "move"
-        self.visible_sprites.update()
-
-        debug(self.player.direction)
+        debug(self.player.pos)

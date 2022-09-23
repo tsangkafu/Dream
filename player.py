@@ -8,30 +8,28 @@ class Player(pygame.sprite.Sprite):
         super().__init__(groups)
         self.image = pygame.image.load(os.path.join("./graphics/character", "player.png")).convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
-        self.direction = pygame.math.Vector2()
+        self.pos = pygame.math.Vector2(pos)
         self.speed = 5
+        self.set_target(pos)
 
-    def input(self):
-        keys = pygame.key.get_pressed()
-
-        if keys[pygame.K_UP]:
-            self.direction.y = -1
-        elif keys[pygame.K_DOWN]:
-            self.direction.y = 1
-        else:
-            self.direction.y = 0
-        
-        if keys[pygame.K_LEFT]:
-            self.direction.x = -1
-        elif keys[pygame.K_RIGHT]:
-            self.direction.x = 1
-        else:
-            self.direction.x = 0
+    def set_target(self, target_pos):
+        self.target = pygame.math.Vector2(target_pos)
     
-    def move(self, speed):
-        self.rect.center += self.direction * speed
-    
-    # Overriding the update method
     def update(self):
-        self.input()
-        self.move(self.speed)
+        # substracting 2 vectors, getting the difference of x and y of them
+        pos_diff = self.target - self.pos
+        # return the length to the vector (the distance of the player and the target)
+        pos_diff_length = pos_diff.length()
+
+        # if the length of the vector is less than the speed, move the player there
+        if pos_diff_length < self.speed:
+            self.pos = self.target
+        elif pos_diff_length != 0:
+            # normalize the vector
+            pos_diff.normalize_ip()
+            # time the speed to decide how fast the character walks
+            pos_diff *= self.speed
+            # add the normalized and scaled vector to the player position
+            self.pos += pos_diff
+            
+        self.rect.topleft = self.pos
