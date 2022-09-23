@@ -12,7 +12,7 @@ class Level:
         self.display_surface = pygame.display.get_surface()
         # including player, enemy
         self.visible_sprites = pygame.sprite.Group()
-        self.empty_node_sprites = pygame.sprite.Group()
+        self.node_sprites = pygame.sprite.Group()
         self.create_map()
         self.cursor = Cursor(pygame.mouse.get_pos())
 
@@ -24,22 +24,24 @@ class Level:
                 y = i * TILESIZE
                 # empty nodes
                 if col == "N":
-                    Node((x, y), "empty", [self.empty_node_sprites])
+                    Node((x, y), (i,j), "empty", [self.node_sprites])
+                    print((i, j))
                 # player
                 if col == "P":
                     self.player = Player((x, y), [self.visible_sprites])
                 # emenies
                 if col == "E":
-                    Node((x, y), "enemy" ,[self.empty_node_sprites])
+                    Node((x, y), (i,j), "enemy" ,[self.node_sprites])
+                    print((i, j))
 
     def run(self):
-        self.empty_node_sprites.draw(self.display_surface)
+        self.node_sprites.draw(self.display_surface)
         self.visible_sprites.draw(self.display_surface)
 
         # initalize the cursor if not collided
         self.cursor.swap_cursor("normal")
 
-        for empty_node in self.empty_node_sprites:
+        for empty_node in self.node_sprites:
             # if the empty node is collided with cursor position, switch the cursor
             if empty_node.rect.collidepoint(pygame.mouse.get_pos()):
                 self.cursor.swap_cursor("hand")

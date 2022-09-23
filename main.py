@@ -12,6 +12,7 @@ class Game:
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         # title of the game
         pygame.display.set_caption("Dream")
+        # self.health
         self.clock = pygame.time.Clock()
         self.level = Level()
 
@@ -28,9 +29,13 @@ class Game:
                     pygame.quit()
                     sys.exit()
                 if event.type == pygame.MOUSEBUTTONDOWN:
-                    for empty_node in self.level.empty_node_sprites:
-                        if empty_node.rect.collidepoint(pygame.mouse.get_pos()):
-                            self.level.player.set_target(empty_node.rect.topleft)
+                    for node in self.level.node_sprites:
+                        if node.rect.collidepoint(pygame.mouse.get_pos()):
+                            self.level.player.set_target(node.rect.topleft)
+
+            # for sprites in self.level.node_sprites:
+            #     pygame.draw.line(self.screen, (255,0,0), sprites.rect.center, self.level.player.rect.center, 5)
+
 
             self.level.run()
 
