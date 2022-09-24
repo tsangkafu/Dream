@@ -7,11 +7,7 @@ from settings import *
 class Node(pygame.sprite.Sprite):
     def __init__(self, pos, ab_pos, node_type, groups):
         super().__init__(groups)
-        # represent the node with proper image according to node type
-        if (node_type == "enemy"):
-            self.image = pygame.image.load(os.path.join("./graphics/node", "enemy_node.png")).convert_alpha()
-        elif (node_type == "empty"):
-            self.image = pygame.image.load(os.path.join("./graphics/node", "empty_node.png")).convert_alpha()
+        self.image = self.get_image(node_type)
         # a tuple representing abstract coordinates that scaled to 9 * 16 map
         self.ab_pos = ab_pos
         self.rect = self.image.get_rect(topleft = pos)
@@ -23,3 +19,12 @@ class Node(pygame.sprite.Sprite):
 
     def is_neighor(self, node):
         return node in self.neighbors
+
+    # represent the node with proper image according to node type
+    def get_image(self, node_type):
+        if (node_type == "enemy"):
+            return pygame.image.load(os.path.join("./graphics/node", "enemy_node.png")).convert_alpha()
+        elif (node_type == "empty"):
+            return pygame.image.load(os.path.join("./graphics/node", "empty_node.png")).convert_alpha()
+        elif (node_type == "village"):
+            return pygame.image.load(os.path.join("./graphics/node", "door.png")).convert_alpha()

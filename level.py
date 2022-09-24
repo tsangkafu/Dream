@@ -39,7 +39,12 @@ class Level:
                     self.player = Player((x, y), [self.visible_sprites])
                 # emenies
                 if col == "E":
-                    node = Node((x, y), (j, i), "enemy" ,[self.node_sprites])
+                    node = Node((x, y), (j, i), "enemy", [self.node_sprites])
+                    self.nodes.append(node)
+                    print((j, i))
+                # village
+                if col == "V":
+                    node = Node((x, y), (j, i), "village", [self.node_sprites])
                     self.nodes.append(node)
                     print((j, i))
 
