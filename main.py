@@ -29,6 +29,7 @@ class Game:
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
+                    
                 # set the target for the player upon mouse click
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     for target_node in self.level.nodes:

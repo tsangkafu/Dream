@@ -47,6 +47,10 @@ class Level:
                     node = Node((x, y), (j, i), "village", [self.node_sprites])
                     self.nodes.append(node)
                     print((j, i))
+                if col == "B":
+                    node = Node((x, y), (j, i), "boss", [self.node_sprites])
+                    self.nodes.append(node)
+                    print((j, i))
 
     def run(self):
         # draw lines between current node and every neighbor node

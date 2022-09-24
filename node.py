@@ -27,4 +27,6 @@ class Node(pygame.sprite.Sprite):
         elif (node_type == "empty"):
             return pygame.image.load(os.path.join("./graphics/node", "empty_node.png")).convert_alpha()
         elif (node_type == "village"):
-            return pygame.image.load(os.path.join("./graphics/node", "door.png")).convert_alpha()
+            return pygame.image.load(os.path.join("./graphics/node", "village_node.png")).convert_alpha()
+        elif (node_type == "boss"):
+            return pygame.image.load(os.path.join("./graphics/node", "boss_node.png")).convert_alpha()
