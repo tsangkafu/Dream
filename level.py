@@ -1,4 +1,5 @@
 import pygame
+import math
 
 from settings import *
 from node import Node
@@ -6,10 +7,6 @@ from player import Player
 from cursor import Cursor
 from debug import debug
 
-# a graph reference that indicate whether nodes are neighbor
-GRAPH = {
-    (7, 13): [(6, 11)]
-}
 
 class Level:
     def __init__(self):
@@ -35,6 +32,10 @@ class Level:
                     print((j, i))
                 # player
                 if col == "P":
+                    # create a empty node where the player is
+                    node = Node((x, y), (j, i), "empty", [self.node_sprites])
+                    self.nodes.append(node)
+                    # create player
                     self.player = Player((x, y), [self.visible_sprites])
                 # emenies
                 if col == "E":
@@ -43,11 +44,15 @@ class Level:
                     print((j, i))
 
     def run(self):
+        # draw lines between current node and every neighbor node
         for node in self.nodes:
-            if node.ab_pos in GRAPH:
-                for node_2 in self.nodes:
-                    if node_2.ab_pos in GRAPH[node.ab_pos]:
-                        pygame.draw.line(self.display_surface, (0, 255, 0), node.rect.center, node_2.rect.center, 5)
+            # get the node where the player is
+            if node.rect.collidepoint(self.player.rect.center):
+                # loop to get the the target node
+                for target_node in self.nodes:
+                    if target_node.ab_pos in MEDIEVAL_GRAPH[node.ab_pos]:
+                        node.set_neighbor(target_node)
+                        pygame.draw.line(self.display_surface, (113, 10, 10), node.rect.center, target_node.rect.center, 7)
 
         self.node_sprites.draw(self.display_surface)
         self.visible_sprites.draw(self.display_surface)
@@ -59,5 +64,6 @@ class Level:
             if empty_node.rect.collidepoint(pygame.mouse.get_pos()):
                 self.cursor.swap_cursor("hand")
                 break
-
+        
+        # import debug window to get the abstract coordinate faster
         debug(self.player.pos)

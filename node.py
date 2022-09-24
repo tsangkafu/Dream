@@ -16,7 +16,10 @@ class Node(pygame.sprite.Sprite):
         self.ab_pos = ab_pos
         self.rect = self.image.get_rect(topleft = pos)
         # a list that will store all the neighbors
-        self.neighbors = set()
+        self.neighbors = []
 
-    def set_neighbor(self):
-        pass
+    def set_neighbor(self, node):
+        self.neighbors.append(node)
+
+    def is_neighor(self, node):
+        return node in self.neighbors

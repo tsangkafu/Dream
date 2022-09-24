@@ -29,14 +29,18 @@ class Game:
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
+                # set the target for the player upon mouse click
                 if event.type == pygame.MOUSEBUTTONDOWN:
-                    for node in self.level.node_sprites:
-                        if node.rect.collidepoint(pygame.mouse.get_pos()):
-                            self.level.player.set_target(node.rect.topleft)
+                    for target_node in self.level.nodes:
+                        # find the node where the mouse is clicked
+                        if target_node.rect.collidepoint(pygame.mouse.get_pos()):
+                            # find the node where the player is
+                            for current_node in self.level.nodes:
+                                # only allow player to move to the neighor node
+                                if current_node.is_neighor(target_node) and current_node.rect.center == self.level.player.rect.center:
+                                    self.level.player.set_target(target_node.rect.topleft)
 
             self.level.run()
-
-            # draw line
 
             self.level.player.update()
 
