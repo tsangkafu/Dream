@@ -7,13 +7,11 @@ from map.medieval import *
 from cursor import Cursor
 from node import *
 from menu import Menu
-from dialog import Dialog
 
 class Game:
     def __init__(self):
         pygame.init()
         self.md_screen = pygame.display.set_mode((WIDTH, HEIGHT))
-        self.md_font = pygame.font.Font(os.path.join("./font", "BreatheFireIii-PKLOB.ttf"), 30)
         pygame.display.set_caption("Dream")
         self.clock = pygame.time.Clock()
         self.md_level = Level("md", self.md_screen)

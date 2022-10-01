@@ -7,7 +7,7 @@ from player import Player
 from cursor import Cursor
 from debug import debug
 from menu import Menu
-from dialog import *
+from dialog import DialogManager
 
 # Common behaviors in different levels #
 
@@ -15,36 +15,39 @@ class Level:
     def __init__(self, theme, screen):
         # get the display surface
         self.screen = screen
-        # including player, enemy
+        # md, gs, cb
+        self.theme = theme
+
+        # spites group
         self.visible_sprites = pygame.sprite.Group()
         self.node_sprites = pygame.sprite.Group()
         self.dialog_sprites = pygame.sprite.Group()
+
         self.nodes = []
         self.create_map()
         self.cursor = Cursor(pygame.mouse.get_pos())
-        # md, gs, cb
-        self.theme = theme
+        self.dialog = DialogManager(self.screen, self.dialog_sprites)
+
         self.game_menu = Menu("game_menu")
         self.in_game_menu = True
-        self.dialog = Dialog(self.screen, self.dialog_sprites)
 
     def run(self):
         self.draw_background()
-
+        
         # everything happened when not in menu screen
         if not self.in_game_menu:
+            if self.theme == "md":
+                # opening scene
+                self.dialog.start_dialog(0)
             self.draw_line()
             self.node_sprites.draw(self.screen)
             self.visible_sprites.draw(self.screen)
             self.change_cursor()
             # update player
             self.visible_sprites.update()
+            self.dialog.start_dialog(0)
             self.set_target()
             self.track_cursor()
-
-            if self.theme == "md":
-                self.dialog.start_dialog(self.dialog.scene_no)
-
 
         # import debug window to get the abstract coordinate faster
         debug(self.player.pos)
