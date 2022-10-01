@@ -1,7 +1,6 @@
 from map.medieval import *
 
-WIDTH = 720
-HEIGHT = 1280
+WIDTH = 576
+HEIGHT = 1024
 FPS = 60
-# (720,1280) = 80
-TILESIZE = 80
+TILESIZE = 64

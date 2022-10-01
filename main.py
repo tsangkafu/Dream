@@ -29,12 +29,14 @@ class Game:
             else:
                 self.md_screen.blit(MEDIEVAL_BACKGROUND, (0, 0))
                 self.md_level.run()
+
                 # track the cursor
                 self.md_level.cursor.rect.center = pygame.mouse.get_pos()
                 # refresh the cursor after the map and node have been generated
                 self.md_screen.blit(self.md_level.cursor.image, pygame.mouse.get_pos())
+
                 # show bubble
-                self.dialog.show_bubble(self.md_screen)
+                # self.dialog.show_bubble(self.md_screen)
 
             # update the whole screen
             pygame.display.update()

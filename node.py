@@ -23,11 +23,4 @@ class Node(pygame.sprite.Sprite):
 
     # represent the node with proper image according to node type
     def get_image(self, node_type):
-        if (node_type == "enemy"):
-            return pygame.image.load(os.path.join("./graphics/node", "enemy_node.png")).convert_alpha()
-        elif (node_type == "empty"):
-            return pygame.image.load(os.path.join("./graphics/node", "empty_node.png")).convert_alpha()
-        elif (node_type == "village"):
-            return pygame.image.load(os.path.join("./graphics/node", "village_node.png")).convert_alpha()
-        elif (node_type == "boss"):
-            return pygame.image.load(os.path.join("./graphics/node", "boss_node.png")).convert_alpha()
+        return pygame.image.load(os.path.join("./graphics/node", node_type + "_node.png")).convert_alpha()
