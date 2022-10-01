@@ -22,11 +22,12 @@ class Level:
         self.visible_sprites = pygame.sprite.Group()
         self.node_sprites = pygame.sprite.Group()
         self.dialog_sprites = pygame.sprite.Group()
+        self.scene_sprites = pygame.sprite.Group()
 
         self.nodes = []
         self.create_map()
         self.cursor = Cursor(pygame.mouse.get_pos())
-        self.dialog = DialogManager(self.screen, self.dialog_sprites)
+        self.dialog = DialogManager(self.screen, self.dialog_sprites, self.scene_sprites)
 
         self.game_menu = Menu("game_menu")
         self.in_game_menu = True
@@ -36,18 +37,16 @@ class Level:
         
         # everything happened when not in menu screen
         if not self.in_game_menu:
-            if self.theme == "md":
-                # opening scene
-                self.dialog.start_dialog(0)
             self.draw_line()
             self.node_sprites.draw(self.screen)
             self.visible_sprites.draw(self.screen)
             self.change_cursor()
             # update player
             self.visible_sprites.update()
-            self.dialog.start_dialog(0)
+            self.scene_handling()
             self.set_target()
             self.track_cursor()
+            
 
         # import debug window to get the abstract coordinate faster
         debug(self.player.pos)
@@ -77,6 +76,10 @@ class Level:
 
     # change the cursor when hover over node
     def change_cursor(self):
+        # don't swap the cursor if it is in a dialog
+        if not self.dialog.dialog_end:
+            return
+
         # initalize the cursor if not collided
         self.cursor.swap_cursor("normal")
         for node in self.node_sprites:
@@ -123,7 +126,7 @@ class Level:
                     node = Node((x, y), (j, i), "empty", [self.node_sprites])
                     self.nodes.append(node)
                     # create player
-                    self.player = Player((x, y), [self.visible_sprites])
+                    self.player = Player((x, y), [self.visible_sprites, self.scene_sprites])
                 # emenies
                 if col == "E":
                     node = Node((x, y), (j, i), "enemy", [self.node_sprites])
@@ -139,3 +142,8 @@ class Level:
                     node = Node((x, y), (j, i), "boss", [self.node_sprites])
                     self.nodes.append(node)
                     print((j, i))
+
+    def scene_handling(self):
+        # opening scene
+        if self.theme == "md":
+            self.dialog.start_dialog(self.dialog.scene_count)
