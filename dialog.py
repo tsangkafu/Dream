@@ -15,7 +15,7 @@ class Dialog(pygame.sprite.Sprite):
     def update(self):
         pass
 
-    def draw(self, screen):
+    def draw(self, text, screen):
         pass
 
 class DialogManager():
