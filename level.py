@@ -7,6 +7,7 @@ from player import Player
 from cursor import Cursor
 from debug import debug
 from menu import Menu
+from dialog import *
 
 # Common behaviors in different levels #
 
@@ -17,6 +18,7 @@ class Level:
         # including player, enemy
         self.visible_sprites = pygame.sprite.Group()
         self.node_sprites = pygame.sprite.Group()
+        self.dialog_sprites = pygame.sprite.Group()
         self.nodes = []
         self.create_map()
         self.cursor = Cursor(pygame.mouse.get_pos())
@@ -24,6 +26,7 @@ class Level:
         self.theme = theme
         self.game_menu = Menu("game_menu")
         self.in_game_menu = True
+        self.dialog = Dialog(self.screen, self.dialog_sprites)
 
     def run(self):
         self.draw_background()
@@ -38,6 +41,10 @@ class Level:
             self.visible_sprites.update()
             self.set_target()
             self.track_cursor()
+
+            if self.theme == "md":
+                self.dialog.start_dialog(self.dialog.scene_no)
+
 
         # import debug window to get the abstract coordinate faster
         debug(self.player.pos)
@@ -81,7 +88,6 @@ class Level:
         self.cursor.rect.center = pygame.mouse.get_pos()
         # refresh the cursor after the map and node have been generated
         self.screen.blit(self.cursor.image, pygame.mouse.get_pos())
-
 
     # set target for player to move upon mouse click
     def set_target(self):
