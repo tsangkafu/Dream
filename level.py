@@ -15,7 +15,7 @@ class Level:
     def __init__(self, theme, screen):
         # get the display surface
         self.screen = screen
-        # md, gs, cb
+        # md, gs, cp
         self.theme = theme
 
         # spites group
@@ -24,7 +24,6 @@ class Level:
         self.dialog_sprites = pygame.sprite.Group()
         self.scene_sprites = pygame.sprite.Group()
 
-        self.nodes = []
         self.create_map()
         self.cursor = Cursor(pygame.mouse.get_pos())
         self.dialog = DialogManager(self.screen, self.dialog_sprites, self.scene_sprites)
@@ -43,13 +42,12 @@ class Level:
             self.change_cursor()
             # update player
             self.visible_sprites.update()
-            self.scene_handling()
+            self.event_handling()
             self.set_target()
             self.track_cursor()
-            
 
-        # import debug window to get the abstract coordinate faster
-        debug(self.player.pos)
+            # import debug window to get the abstract coordinate faster
+            debug(self.player.pos)
 
     # draw the background on the screen based on theme
     def draw_background(self):
@@ -65,14 +63,18 @@ class Level:
     
     # draw lines between current node and every neighbor node
     def draw_line(self):
-            for node in self.nodes:
-                # get the node where the player is
-                if node.rect.collidepoint(self.player.rect.center):
-                    # loop to get the the target node
-                    for target_node in self.nodes:
-                        if target_node.ab_pos in MEDIEVAL_GRAPH[node.ab_pos]:
-                            node.set_neighbor(target_node)
-                            pygame.draw.line(self.screen, (113, 10, 10), node.rect.center, target_node.rect.center, 7)
+        # don't draw the line if it is in a dialog
+        if not self.dialog.dialog_end:
+            return
+
+        for node in self.node_sprites:
+            # get the node where the player is
+            if node.rect.collidepoint(self.player.rect.center):
+                # loop to get the the target node
+                for target_node in self.node_sprites:
+                    if target_node.ab_pos in MEDIEVAL_GRAPH[node.ab_pos]:
+                        node.set_neighbor(target_node)
+                        pygame.draw.line(self.screen, (113, 10, 10), node.rect.center, target_node.rect.center, 7)
 
     # change the cursor when hover over node
     def change_cursor(self):
@@ -100,11 +102,11 @@ class Level:
         for event in pygame.event.get():
             # set the target for the player upon mouse click
             if event.type == pygame.MOUSEBUTTONDOWN:
-                for target_node in self.nodes:
+                for target_node in self.node_sprites:
                     # find the node where the mouse is clicked
                     if target_node.rect.collidepoint(pygame.mouse.get_pos()):
                         # find the node where the player is
-                        for current_node in self.nodes:
+                        for current_node in self.node_sprites:
                             # only allow player to move to the neighor node
                             if current_node.is_neighor(target_node) and current_node.rect.center == self.player.rect.center:
                                 self.player.set_target(target_node.rect.topleft)
@@ -117,33 +119,41 @@ class Level:
                 y = i * TILESIZE
                 # empty nodes
                 if col == "N":
-                    node = Node((x, y), (j, i), "empty", [self.node_sprites])
-                    self.nodes.append(node)
-                    print((j, i))
+                    Node((x, y), (j, i), "empty", [self.node_sprites])
                 # player
                 if col == "P":
                     # create a empty node where the player is
-                    node = Node((x, y), (j, i), "empty", [self.node_sprites])
-                    self.nodes.append(node)
+                    Node((x, y), (j, i), "empty", [self.node_sprites])
                     # create player
                     self.player = Player((x, y), [self.visible_sprites, self.scene_sprites])
                 # emenies
                 if col == "E":
-                    node = Node((x, y), (j, i), "enemy", [self.node_sprites])
-                    self.nodes.append(node)
-                    print((j, i))
+                    Node((x, y), (j, i), "enemy", [self.node_sprites])
                 # village
                 if col == "V":
-                    node = Node((x, y), (j, i), "village", [self.node_sprites])
-                    self.nodes.append(node)
-                    print((j, i))
+                    Node((x, y), (j, i), "village", [self.node_sprites])
                 # boss
                 if col == "B":
-                    node = Node((x, y), (j, i), "boss", [self.node_sprites])
-                    self.nodes.append(node)
-                    print((j, i))
+                    Node((x, y), (j, i), "boss", [self.node_sprites])
 
-    def scene_handling(self):
-        # opening scene
+    def event_handling(self):
+        # all scene in medieval
         if self.theme == "md":
-            self.dialog.start_dialog(self.dialog.scene_count)
+            # scenes related to node collision
+            for node in self.node_sprites:
+                # opening scene
+                if node.ab_pos == (7, 15):
+                    if self.player.rect.colliderect(node.rect):
+                        self.dialog.start_dialog(0)
+                # first encounter scene
+                if node.ab_pos == (7, 13):
+                    if self.player.rect.colliderect(node.rect):
+                        self.dialog.start_dialog(1)
+
+        elif self.theme == "gs":
+            pass
+        elif self.theme == "cp":
+            pass
+
+    def battle(self):
+        pass

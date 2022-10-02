@@ -31,16 +31,19 @@ class DialogManager(pygame.sprite.Sprite):
         self.fader.set_alpha(128)
         self.fader.fill((0, 0, 0))
 
-        self.scene_count = 0
+        
+        self.finished_scenes = []
         # count for sentence within each scene
         self.sentence_no = 0
-        self.dialog_end = False
+        self.dialog_end = True
 
     def get_image(self, theme):
         return pygame.image.load(os.path.join("./graphics/menu/md", theme + "_dialog.png")).convert_alpha()
 
     def start_dialog(self, scene_no):
-        if not self.dialog_end:
+        if scene_no not in self.finished_scenes:
+            self.dialog_end = False
+
             self.screen.blit(self.fader, (0, 0))
             # draw the dialog box
             self.screen.blit(self.image, self.dialog_pos)
@@ -74,8 +77,9 @@ class DialogManager(pygame.sprite.Sprite):
                         self.sentence_no += 1
                     else:
                         self.kill()
+                        self.finished_scenes.append(scene_no)
+                        self.sentence_no = 0
                         self.dialog_end = True
-                        self.scene_count += 1
 
     def update(self):
         pass

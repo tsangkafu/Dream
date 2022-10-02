@@ -8,6 +8,6 @@ scenes = {
         ("Lucas Vopiscus", "It feels like I just woke up from a dream...")
     ],
     1: [
-        
+        ("Lucas Vopiscus", "What the fuck is this?")
     ]
 }
