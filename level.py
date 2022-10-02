@@ -33,6 +33,8 @@ class Level:
         self.game_menu = Menu("game_menu")
         self.in_game_menu = True
 
+        self.in_battle = False
+
         # status bar
         self.status_bar = Status(self.screen, self.ui_sprites, self.player)
 
