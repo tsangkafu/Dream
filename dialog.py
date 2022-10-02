@@ -30,7 +30,6 @@ class DialogManager(pygame.sprite.Sprite):
         self.fader = pygame.Surface((WIDTH, HEIGHT))
         self.fader.set_alpha(128)
         self.fader.fill((0, 0, 0))
-
         
         self.finished_scenes = []
         # count for sentence within each scene
@@ -51,7 +50,6 @@ class DialogManager(pygame.sprite.Sprite):
             scene_length = len(scenes[scene_no])
 
             character_name = scenes[scene_no][self.sentence_no][0]
-            # calculate 
             character_name_surface = self.font.render(character_name, True, TEXT_COLOR)
             character_rect = character_name_surface.get_rect(topleft = self.character_name_pos)
 

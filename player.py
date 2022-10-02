@@ -7,12 +7,23 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, pos, groups):
         super().__init__(groups)
         self.name = "Lucas Vopiscus"
+
+        # basic status
+        self.hp = 100
+        self.max_hp = 100
+        self.attack = 10
+        self.defense = 0
+        self.exp = 0
+        self.level = 1
+        self.money = 0
+        
         # avatar of the character
         self.image = pygame.image.load(os.path.join("./graphics/character", self.name.replace(" ", "_") + "_avatar.png")).convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
         self.large_image = pygame.image.load(os.path.join("./graphics/character", self.name.replace(" ", "_") + ".png")).convert_alpha()
         self.pos = pygame.math.Vector2(pos)
         self.speed = 5
+
         self.set_target(pos)
 
     def set_target(self, target_pos):

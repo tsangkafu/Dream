@@ -8,6 +8,7 @@ from cursor import Cursor
 from debug import debug
 from menu import Menu
 from dialog import DialogManager
+from status import Status
 
 # Common behaviors in different levels #
 
@@ -19,17 +20,21 @@ class Level:
         self.theme = theme
 
         # spites group
-        self.visible_sprites = pygame.sprite.Group()
+        self.player_sriptes = pygame.sprite.Group()
         self.node_sprites = pygame.sprite.Group()
         self.dialog_sprites = pygame.sprite.Group()
         self.scene_sprites = pygame.sprite.Group()
+        self.ui_sprites = pygame.sprite.Group()
 
         self.create_map()
         self.cursor = Cursor(pygame.mouse.get_pos())
         self.dialog = DialogManager(self.screen, self.dialog_sprites, self.scene_sprites)
-
+        
         self.game_menu = Menu("game_menu")
         self.in_game_menu = True
+
+        # status bar
+        self.status_bar = Status(self.screen, self.ui_sprites, self.player)
 
     def run(self):
         self.draw_background()
@@ -38,10 +43,11 @@ class Level:
         if not self.in_game_menu:
             self.draw_line()
             self.node_sprites.draw(self.screen)
-            self.visible_sprites.draw(self.screen)
+            self.player_sriptes.draw(self.screen)
             self.change_cursor()
             # update player
-            self.visible_sprites.update()
+            self.player_sriptes.update()
+            self.draw_status_bar()
             self.event_handling()
             self.set_target()
             self.track_cursor()
@@ -60,7 +66,14 @@ class Level:
             if self.theme == "md":
                 self.screen.blit(MEDIEVAL_BACKGROUND, (0 , 0))
 
-    
+    def draw_status_bar(self):
+        # don't draw the line if it is in a dialog
+        if not self.dialog.dialog_end:
+            return
+        
+        self.ui_sprites.draw(self.screen)
+        self.status_bar.draw()
+
     # draw lines between current node and every neighbor node
     def draw_line(self):
         # don't draw the line if it is in a dialog
@@ -125,7 +138,7 @@ class Level:
                     # create a empty node where the player is
                     Node((x, y), (j, i), "empty", [self.node_sprites])
                     # create player
-                    self.player = Player((x, y), [self.visible_sprites, self.scene_sprites])
+                    self.player = Player((x, y), [self.player_sriptes, self.scene_sprites])
                 # emenies
                 if col == "E":
                     Node((x, y), (j, i), "enemy", [self.node_sprites])
