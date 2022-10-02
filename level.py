@@ -71,7 +71,9 @@ class Level:
         if not self.dialog.dialog_end:
             return
         
+        # draw the status bar
         self.ui_sprites.draw(self.screen)
+        # draw the hp bar and exp bar
         self.status_bar.draw()
 
     # draw lines between current node and every neighbor node

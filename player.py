@@ -9,12 +9,13 @@ class Player(pygame.sprite.Sprite):
         self.name = "Lucas Vopiscus"
 
         # basic status
-        self.hp = 100
-        self.max_hp = 100
-        self.attack = 10
-        self.defense = 0
-        self.exp = 0
         self.level = 1
+        self.max_hp = 100
+        self.hp = 80
+        self.exp = 30
+        self.exp_to_upgrade = 100
+        self.attack = 10
+        self.defense = 2
         self.money = 0
         
         # avatar of the character
@@ -28,6 +29,15 @@ class Player(pygame.sprite.Sprite):
 
     def set_target(self, target_pos):
         self.target = pygame.math.Vector2(target_pos)
+
+    def upgrade(self):
+        if self.exp == self.exp_to_upgrade:
+            self.level += 1
+            self.exp = 0
+            self.exp_to_upgrade *= 2
+            self.max_hp = self.level * 20 + 80
+            self.attact = self.level * 2 + 8
+            self.defense = self.level * 2 + 0
     
     def update(self):
         # substracting 2 vectors, getting the difference of x and y of them
