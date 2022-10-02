@@ -28,7 +28,7 @@ class DialogManager(pygame.sprite.Sprite):
         self.character_pos = (WIDTH - 170, HEIGHT - 290)
         # a transparent rect to fade out the background
         self.fader = pygame.Surface((WIDTH, HEIGHT))
-        self.fader.set_alpha(128)
+        self.fader.set_alpha(170)
         self.fader.fill((0, 0, 0))
         
         self.finished_scenes = []
