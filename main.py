@@ -4,21 +4,18 @@ import sys
 from settings import *
 from level import Level
 from map.medieval import *
-from cursor import Cursor
-from node import *
-from menu import Menu
 
 class Game:
     def __init__(self):
         pygame.init()
-        self.md_screen = pygame.display.set_mode((WIDTH, HEIGHT))
+        self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         pygame.display.set_caption("Dream")
         self.clock = pygame.time.Clock()
-        self.md_level = Level("md", self.md_screen)
+        self.level = Level("md", self.screen)
 
     def run(self):
         while True:
-            self.md_level.run()
+            self.level.run()
 
             # update the whole screen
             pygame.display.update()

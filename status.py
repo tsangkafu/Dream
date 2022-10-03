@@ -14,8 +14,11 @@ class Status(pygame.sprite.Sprite):
         super().__init__(groups)
         self.screen = screen
         self.player = player
-        self.image = pygame.image.load(os.path.join("./graphics/ui", "status_bar.png")).convert_alpha()
+        self.image = pygame.image.load(os.path.join("./graphics/ui/md", "status_bar.png")).convert_alpha()
         self.rect = self.image.get_rect(topleft = (WIDTH - self.image.get_width(), 5))
+            
+    def draw(self, theme):
+        self.image = pygame.image.load(os.path.join("./graphics/ui/" + theme, "status_bar.png")).convert_alpha()
         
         self.hp_bar = pygame.Surface(HP_BAR_SIZE)
         self.hp_bar.fill(HP_BAR_COLOR)
@@ -25,8 +28,7 @@ class Status(pygame.sprite.Sprite):
         self.exp_bar = pygame.Surface(EXP_BAR_SIZE)
         self.exp_bar.fill(EXP_BAR_COLOR)
         self.exp_bar_rect = self.exp_bar.get_rect(topleft = (self.rect.topleft[0] + 74, self.rect.topleft[1] + 42))
-    
-    def draw(self):
+
         # scaling health bar
         hp_ratio = self.player.hp / self.player.max_hp
         # time ratio with the hp bar to get the new hp bar

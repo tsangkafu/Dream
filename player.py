@@ -4,20 +4,24 @@ import os
 from settings import *
 
 class Player(pygame.sprite.Sprite):
-    def __init__(self, pos, groups):
+    def __init__(self, theme, screen, pos, groups):
         super().__init__(groups)
-        self.name = "Lucas Vopiscus"
+
+        self.theme = theme
+        self.name = self.get_name()
 
         # basic status
         self.level = 1
         self.max_hp = 100
         self.hp = 80
-        self.exp = 30
+        self.exp = 0
         self.exp_to_upgrade = 100
         self.attack = 10
         self.defense = 2
         self.money = 0
         
+        self.screen = screen
+
         # avatar of the character
         self.image = pygame.image.load(os.path.join("./graphics/character", self.name.replace(" ", "_") + "_avatar.png")).convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
@@ -26,6 +30,14 @@ class Player(pygame.sprite.Sprite):
         self.speed = 5
 
         self.set_target(pos)
+
+    def get_name(self):
+        if self.theme == "md":
+            return "Lucas Vopiscus"
+        elif self.theme == "gs":
+            return "Gangster"
+        elif self.theme == "cp":
+            return "Cyberpunk"
 
     def set_target(self, target_pos):
         self.target = pygame.math.Vector2(target_pos)
@@ -42,7 +54,7 @@ class Player(pygame.sprite.Sprite):
     def update(self):
         # substracting 2 vectors, getting the difference of x and y of them
         pos_diff = self.target - self.pos
-        # return the length to the vector (the distance of the player and the target)
+        # get the length to the vector (the distance of the player and the target)
         pos_diff_length = pos_diff.length()
 
         # if the length of the vector is less than the speed, move the player there
@@ -57,3 +69,6 @@ class Player(pygame.sprite.Sprite):
             self.pos += pos_diff
             
         self.rect.topleft = self.pos
+
+    def draw(self):
+        self.screen.blit(self.image, self.pos)

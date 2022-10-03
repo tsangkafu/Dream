@@ -6,9 +6,8 @@ from settings import *
 
 TEXT_COLOR = (30, 30, 30)
 
-class DialogManager(pygame.sprite.Sprite):
-    def __init__(self, screen, groups, scene_sprites):
-        super().__init__(groups)
+class DialogManager():
+    def __init__(self, screen, scene_sprites):
         # the sprite group where every sprite has dialogs
         self.scene_sprites = scene_sprites
 
@@ -23,7 +22,7 @@ class DialogManager(pygame.sprite.Sprite):
         # the position of the text
         self.text_pos = (30, HEIGHT - self.image.get_height() + 60)
         # the position of the character's name
-        self.character_name_pos = (85, HEIGHT - self.image.get_height() + 5)
+        self.character_name_pos = (85, HEIGHT - self.image.get_height() + 6)
         # the position of the character avatar
         self.character_pos = (WIDTH - 170, HEIGHT - 290)
         # a transparent rect to fade out the background
@@ -74,7 +73,6 @@ class DialogManager(pygame.sprite.Sprite):
                     if self.sentence_no < scene_length - 1:
                         self.sentence_no += 1
                     else:
-                        self.kill()
                         self.finished_scenes.append(scene_no)
                         self.sentence_no = 0
                         self.dialog_end = True
