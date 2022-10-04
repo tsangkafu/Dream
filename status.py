@@ -3,12 +3,6 @@ import os
 
 from settings import *
 
-HP_BAR_SIZE = (115, 11)
-HP_BAR_COLOR = (140, 30, 30)
-EXP_BAR_SIZE = (115, 6)
-EXP_BAR_COLOR = (200, 200, 50)
-LEVEL_COLOR = (200, 200, 200)
-
 class Status(pygame.sprite.Sprite):
     def __init__(self, screen, groups, player):
         super().__init__(groups)
