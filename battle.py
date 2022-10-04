@@ -3,12 +3,6 @@ import os
 
 from settings import *
 
-
-HP_BAR_SIZE = (170, 30)
-HP_BAR_COLOR = (140, 30, 30)
-HP_BAR_BG_COLOR = (150, 150, 150)
-TEXT_COLOR = (200, 200, 200)
-
 class Battle():
     def __init__(self, screen, player):
         # a number serving as the index of the ENEMIES dict
@@ -78,7 +72,7 @@ class Battle():
         self.screen.blit(enemy_info, enemy_info_rect)
 
         # name of player
-        player_name_surface = self.font.render(self.player.name, True, TEXT_COLOR)
+        player_name_surface = self.font.render(self.player.name, True, BATTLE_NAME_TEXT_COLOR)
         player_name_rect = player_name_surface.get_rect(center = (
             player_info_rect.topleft[0] + 200,
             player_info_rect.topleft[1] + 55))
@@ -87,7 +81,7 @@ class Battle():
         self.screen.blit(player_name_surface, player_name_rect)
 
         # name of the enemy
-        enemy_name_surface = self.font.render(self.enemy.name, True, TEXT_COLOR)
+        enemy_name_surface = self.font.render(self.enemy.name, True, BATTLE_NAME_TEXT_COLOR)
         # the enemy name should be relational to the info box
         enemy_name_rect = enemy_name_surface.get_rect(center = (
             enemy_info_rect.topleft[0] + 190,
@@ -95,13 +89,12 @@ class Battle():
         enemy_name_surface.set_alpha(self.object_alpha)
         self.screen.blit(enemy_name_surface, enemy_name_rect)
 
-        print(player_info_rect.topleft, enemy_info_rect.topleft)
         # hp bar of the player
         player_hp_ratio = self.player.hp / self.player.max_hp
-        player_hp_bar = pygame.Surface((HP_BAR_SIZE[0] * player_hp_ratio, HP_BAR_SIZE[1]))
-        player_hp_bar.fill(HP_BAR_COLOR)
-        player_hp_bar_bg = pygame.Surface(HP_BAR_SIZE)
-        player_hp_bar_bg.fill(HP_BAR_BG_COLOR)
+        player_hp_bar = pygame.Surface((BATTLE_HP_BAR_SIZE[0] * player_hp_ratio, BATTLE_HP_BAR_SIZE[1]))
+        player_hp_bar.fill(BATTLE_HP_BAR_COLOR)
+        player_hp_bar_bg = pygame.Surface(BATTLE_HP_BAR_SIZE)
+        player_hp_bar_bg.fill(BATTLE_HP_BAR_BG_COLOR)
         player_hp_bar_bg.set_alpha(100)
         # the hp bar should be relational to the info box
         player_hp_bar_pos = (
@@ -115,10 +108,10 @@ class Battle():
 
         # hp bar of the enemy
         enemy_hp_ratio = self.enemy.hp / self.enemy.max_hp
-        enemy_hp_bar = pygame.Surface((HP_BAR_SIZE[0] * enemy_hp_ratio, HP_BAR_SIZE[1]))
-        enemy_hp_bar.fill(HP_BAR_COLOR)
-        enemy_hp_bar_bg = pygame.Surface(HP_BAR_SIZE)
-        enemy_hp_bar_bg.fill(HP_BAR_BG_COLOR)
+        enemy_hp_bar = pygame.Surface((BATTLE_HP_BAR_SIZE[0] * enemy_hp_ratio, BATTLE_HP_BAR_SIZE[1]))
+        enemy_hp_bar.fill(BATTLE_HP_BAR_COLOR)
+        enemy_hp_bar_bg = pygame.Surface(BATTLE_HP_BAR_SIZE)
+        enemy_hp_bar_bg.fill(BATTLE_HP_BAR_BG_COLOR)
         enemy_hp_bar_bg.set_alpha(100)
         # the position of the hp bar should be on the hp bar background
         enemy_hp_bar_pos = (

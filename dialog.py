@@ -4,8 +4,6 @@ import os
 from scene import scenes
 from settings import *
 
-TEXT_COLOR = (30, 30, 30)
-
 class DialogManager():
     def __init__(self, screen, scene_sprites):
         # the sprite group where every sprite has dialogs
@@ -49,11 +47,11 @@ class DialogManager():
             scene_length = len(scenes[scene_no])
 
             character_name = scenes[scene_no][self.sentence_no][0]
-            character_name_surface = self.font.render(character_name, True, TEXT_COLOR)
+            character_name_surface = self.font.render(character_name, True, DIALOG_TEXT_COLOR)
             character_rect = character_name_surface.get_rect(topleft = self.character_name_pos)
 
             text = scenes[scene_no][self.sentence_no][1]
-            text_surface = self.font.render(text , True, TEXT_COLOR)
+            text_surface = self.font.render(text , True, DIALOG_TEXT_COLOR)
             text_rect = text_surface.get_rect(topleft = self.text_pos)
 
             # print character picture to the dialog box

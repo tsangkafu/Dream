@@ -3,20 +3,6 @@ import os
 
 from settings import *
 
-ENEMIES = {
-    1: {
-        "theme": "md",
-        "name": "Stone Mumbler",
-        "max_hp": 80,
-        "hp": 70,
-        "attack": 5,
-        "defense": 3,
-        "exp": 30,
-        "items": [],
-        "h_offset": 0
-    }
-}
-
 class Enemy(pygame.sprite.Sprite):
     def __init__(self, groups, theme, name, max_hp, hp, attack, defense, exp, items, h_offset):
         super().__init__(groups)
