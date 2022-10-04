@@ -17,13 +17,13 @@ class Game:
         while True:
             self.level.run()
 
-            # update the whole screen
-            pygame.display.update()
-
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
                     sys.exit()
+            
+            # update the whole screen
+            pygame.display.update()
 
             self.clock.tick(FPS)
 
