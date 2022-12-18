@@ -395,9 +395,11 @@ class Level:
         self.equipment = Equipment(self.screen, self.theme, self.equipment_sprites, self.player, self.sfx)
         # create enemies and put them into the sprite group
         for i in ENEMIES:
-            Enemy([self.enemy_sprites, self.scene_sprites], i, **ENEMIES[i])
+            if ENEMIES[i]["theme"] == self.theme:
+                Enemy([self.enemy_sprites, self.scene_sprites], i, **ENEMIES[i])
         for i in NPCS:
-            NPC([self.scene_sprites, self.npc_sprites], **NPCS[i])
+            if NPCS[i]["theme"] == self.theme:
+                NPC([self.scene_sprites, self.npc_sprites], **NPCS[i])
         # exit button for village
         self.village_button = VButton(self.screen, self.theme)
 

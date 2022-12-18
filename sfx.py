@@ -4,6 +4,7 @@ class SFX():
     def __init__(self, theme):
         pygame.mixer.init()
         pygame.mixer.set_num_channels(10)
+        self.theme = theme
         self.ambient_channel = pygame.mixer.Channel(1)
 
         self.step_channel = pygame.mixer.Channel(2)
@@ -46,8 +47,8 @@ class SFX():
             self.monster_die = pygame.mixer.Sound("./sfx/md/monster_die.wav")
 
         elif theme == "gs":
-            self.bgm = pygame.mixer.Sound("./sfx/md/world_bgm.wav")
-            self.ambient = pygame.mixer.Sound("./sfx/md/ambient.wav")
+            self.bgm = pygame.mixer.Sound("./sfx/gs/world_bgm.wav")
+            self.ambient = pygame.mixer.Sound("./sfx/gs/ambient.wav")
             self.walk = pygame.mixer.Sound("./sfx/md/walking.wav")
             self.enemy_slash = pygame.mixer.Sound("./sfx/md/enemy_slash.wav")
             self.umph = pygame.mixer.Sound("./sfx/md/umph.wav")
@@ -77,7 +78,7 @@ class SFX():
         self.ambient_channel.play(self.ambient, -1)
 
     def volume_setting(self):
-        self.bgm.set_volume(0.4)
+        self.bgm.set_volume(0.4 if self.theme == "md" else 0.04)
         self.ambient.set_volume(0.2)
         self.bonfire.set_volume(0.4)
         self.enemy_slash.set_volume(0.4)

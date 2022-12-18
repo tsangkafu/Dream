@@ -415,7 +415,7 @@ ENEMIES = {
     },
     30: {
         "theme": "gs",
-        "name": "salvatore Scarface",
+        "name": "Salvatore Scarface",
         "max_hp": 100,
         "hp": 100,
         "attack": 14,

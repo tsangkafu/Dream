@@ -23,8 +23,7 @@ scenes = {
         ("Lucas Vopiscus", "I can hear it behind me."),
         ("Lucas Vopiscus", "Please give me strength.")],
     5: [
-        ("Lucas Vopiscus", "The battle is over, but the scars remain."),
-        ("Lucas Vopiscus", "The weight of every life taken weighs heavily on my soul.")],
+        ("Lucas Vopiscus", "The battle is over, but the karma remain.")],
     6: [
         # corpsesword
         ("Lucas Vopiscus", "The smell of death....this does not feel right!")],
@@ -37,8 +36,7 @@ scenes = {
         ("Lucas Vopiscus", "A woman stands right at the corner."),
         ("Lucas Vopiscus", "Obviously not a hospitable woman.")],
     9: [
-        ("Lucas Vopiscus", "I am covered in the blood of that creature."),
-        ("Lucas Vopiscus", "I can't help but feel a sense of guilt, although it is not a human.")],
+        ("Lucas Vopiscus", "What did I just kill.")],
     10: [
         # second bonfire
         ("Lucas Vopiscus", "Bonfire..."),
@@ -46,7 +44,7 @@ scenes = {
         ("Lucas Vopiscus", "It is getting colder and colder...")],
     11: [
         # phantomfreak
-        ("Lucas Vopiscus", "What dark magic is this that brings such a monstrous being to this land?")],
+        ("Lucas Vopiscus", "What brings such a monstrous being to this land?")],
     11.5: [
         ("Lucas Vopiscus", "A giant aggregation of wraiths..."),
         ("Lucas Vopiscus", "Pull all your dirty tricks on me, Ursinus."),
@@ -142,6 +140,110 @@ scenes = {
     32.5: [
         ("Lucas Vopiscus", "A wretched soul...")],
 
+    # chapter 2
+    50: [
+        # opening scene
+        ("Lucio Santarossa", "Can't remember how I got here."),
+        ("Lucio Santarossa", "It feels like I just woke up from a long dream."),
+        ("Lucio Santarossa", "My heart is racing and my stomach is churning.")],
+    51: [
+        # mario maddog
+        ("Mario Maddog", "Can't remember how I got here."),
+        ("Lucio Santarossa", "It feels like I just woke up from a long dream."),
+        ("Mario Maddog", "My heart is racing and my stomach is churning.")],
+    52: [
+        # pietro ferocious
+        ("Lucio Santarossa", "Can't remember how I got here."),
+        ("Lucio Santarossa", "It feels like I just woke up from a long dream.")],
+    53: [
+        ("Pietro Ferocious", "Stop there."),
+        ("Lucio Santarossa", "Can't remember how I got here."),
+    ],
+    54: [
+        # boss fight with frankie blades
+        ("Frankie Blades", "Stop there."),
+        ("Lucio Santarossa", "Can't remember how I got here."),
+    ],
+    55: [
+        # frankie blades
+        ("Frankie Blades", "Stop there."),
+        ("Lucio Santarossa", "Can't remember how I got here.")
+        ],
+    56: [
+        ("Lucio Santarossa", "Does not worth my ")
+        ],
+    57: [
+        # davide coldblooded
+        ("Davide Coldblooded", "...")
+        ],
+    58: [
+        ("Lucio Santarossa", "Does not worth my ")
+        ],
+    59: [
+        # angelo the animal
+        ("Angelo The Animal", "Does not worth my "),
+        ("Lucio Santarossa", "Does not worth my ")
+        ],
+    60: [("Lucio Santarossa", "Does not worth my ")
+    ],    
+    61: [
+        # carlo hammer
+        ("Carlo Hammer", "Does not worth my ")
+        ],
+    62: [
+        ("Lucio Santarossa", "Does not worth my ")
+        ],
+    63: [
+        # johhny hands boss fight
+        ("Lucio Santarossa", "Does not worth my "),
+        ("Johhny Hands", "Does not worth my ")
+    ],
+    64: [
+        ("Lucio Santarossa", "Does not worth my "),
+        ("Johhny Hands", "Does not worth my ")
+    ],
+    65: [
+        # vito savage
+        ("Lucio Santarossa", "Does not worth my "),
+        ("Vito Savage", "Does not worth my ")
+    ],
+    66: [
+        ("Lucio Santarossa", "Does not worth my ")
+    ],
+    67: [
+        # antonio viper
+        ("Lucio Santarossa", "Does not worth my "),
+        ("Antonio Viper", "Does not worth my ")
+    ],
+    68: [
+        ("Lucio Santarossa", "Does not worth my ")
+    ],
+    69: [
+        # incendiary giovanni
+        ("Incendiary Giovanni", "Does not worth my "),
+        ("Lucio Santarossa", "Does not worth my ")
+    ],
+    70: [
+        ("Lucio Santarossa", "Does not worth my ")
+    ],
+    71: [
+        # salvatore scarface
+        ("Salvatore Scarface", "Does not worth my ")
+    ],
+    72: [
+        ("Lucio Santarossa", "Does not worth my ")
+    ],
+    73: [
+        # francesco pistolero
+        ("Francesco Pistolero", "asd")
+    ],
+    74: [
+        ("Lucio Santarossa", "Does not worth my ")
+    ],
+
+    
+
+
     # system dialog / voice over
     200: [
         (" ", "You wake up from the dream to get into another."),
@@ -197,13 +299,12 @@ hidden_scenes = {
     401: [
         ("Lucas Vopiscus", "It was hubris that led you to this ignominious end, Iduma."),
         ("Lucas Vopiscus", "Burn in hell and you shall never dream again."),
-        ("Lucas Vopiscus", "Now, it is time to kill myself..."),
-        ("Lucas Vopiscus", "...again.")],
+        ("Lucas Vopiscus", "Now, it is time to kill myself again.")],
     402: [
     # Maire Whelani
         ("Maire Whelani", "Finally, someone brought it...here. Now I can wake...wake up..."),
         (" ", "Maire starts eating the remaining of her own kid."),
-        ("Lucas Vopiscus", "What a redemption..."),
+        ("Lucas Vopiscus", "What a redemption."),
         (" ", "Maire suddenly turns her head to you."),
         ("Maire Whelani", "This...this is so tasty...I figured..."),
         ("Maire Whelani", "your flesh would be...even...better..."), 
@@ -224,7 +325,6 @@ hidden_scenes = {
         ("Ursinus Clodianus", "...if you can ever wake."),
         ("Lucas Vopiscus", "Is this your last word? Ursinus."),
         ("Ursinus Clodianus", "The only reason that I am still here is because you are not dead."),
-        ("Ursinus Clodianus", "The redemption is not yet complete."),
         ("Ursinus Clodianus", "I will kill you for fun, but for a chance of waking up..."),
         ("Ursinus Clodianus", "I am going to carve you up real nice."),
         (" ", "Ursinus begins making strange noises, curling his body in agony."), 
@@ -241,7 +341,7 @@ hidden_scenes = {
         ("Egnatius Barbatus", "Suicide victims have a harder time waking up."),
         ("Egnatius Barbatus", "They are the last to leave this dream."),
         ("Egnatius Barbatus", "Their gravitation will keep dragging other people into this dream."),
-        ("Lucas Vopiscus", "Let me guess, Iduma committed suicide?"),
+        ("Lucas Vopiscus", "Iduma committed suicide?"),
         ("Egnatius Barbatus", "Yes, and he does not want this dream to end."),
         ("Lucas Vopiscus", "That's why we are still alive."),
         ("Egnatius Barbatus", "All who wake up in this dream hereafter can suffer as we have done."),
@@ -250,7 +350,7 @@ hidden_scenes = {
         ("Egnatius Barbatus", "That is not important anymore. We both had realization since we woke up."),
         ("Lucas Vopiscus", "Am I your redemption?"),
         ("Egnatius Barbatus", "I helped you take your own life, and now we're both trapped here."),
-        ("Egnatius Barbatus", "Now, let me end this dream, my old friend."),
+        ("Egnatius Barbatus", "Let me end this dream, Lucas."),
         ("Egnatius Barbatus", "I am not afraid anymore, even if it means we will perish together!")],
     407: [
         ("Lucas Vopiscus", "So long, Egnatius."),

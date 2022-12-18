@@ -1,8 +1,8 @@
 # Dream
 COMP4555 - Final Project
 
-Music:
-Music by <a href="https://pixabay.com/users/sergequadrado-24990007/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=90162">SergeQuadrado</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=90162">Pixabay</a>
+## Medieval Theme Music
+Background Music by <a href="https://pixabay.com/users/sergequadrado-24990007/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=90162">SergeQuadrado</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=90162">Pixabay</a>
 
 Ambient Sound Effect by <a href="https://pixabay.com/users/666herohero-25759907/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=21834">666HeroHero</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=21834">Pixabay</a>
 
@@ -60,3 +60,8 @@ Bonfire Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribut
 Scream Sound Effect by <a href="https://pixabay.com/users/studioalivioglobal-28281460/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=123080">StudioAlivioGlobal</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=123080">Pixabay</a>
 
 Door Open Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6038">Pixabay</a>
+
+##Mafia Theme Music
+Music by <a href="https://pixabay.com/users/qubesounds-24397640/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=121463">QubeSounds</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=121463">Pixabay</a>
+
+Ambient Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6762">Pixabay</a>

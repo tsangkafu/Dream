@@ -30,7 +30,6 @@ class EventManager():
         
         # all scene in medieval
         if self.level.theme == "md":
-            
             """
             Unlocking hidden scenes here.
             """
@@ -74,6 +73,10 @@ class EventManager():
                 # skip over (remove) the first 2 dialogs with Maire
                 else:
                     self.dialog.unlock_scene([402, 403], [302, 303])
+
+                if 403 in self.dialog.finished_scenes:
+                    self.player.items.remove("Dismal Head")
+
             # revenge to Ursinus after bonehand is killed
             if 14.5 in self.dialog.finished_scenes or 502.5 in self.dialog.finished_scenes:
                 # this also removes previous Egnatius dialog if not finished
@@ -247,7 +250,47 @@ class EventManager():
                             self.selected_NPC = None
 
         elif self.level.theme == "gs":
-            pass
+            for node in self.level.node_sprites:
+                # opening scene
+                if node.ab_pos == (1, 15):
+                    self.encounter(node, 50, 50, -1)
+                # maddog
+                if node.ab_pos == (2, 13):
+                    self.encounter(node, 51, 52, 20)
+                # pietro ferocious
+                if node.ab_pos == (0, 11):
+                    self.encounter(node, 53, 54, 21)
+                # frankie blades
+                if node.ab_pos == (3, 10):
+                    self.encounter(node, 55, 56, 22)
+                # davide coldblooded
+                if node.ab_pos == (5, 12):
+                    self.encounter(node, 57, 58, 23)
+                # angelo the animal
+                if node.ab_pos == (6, 9):
+                    self.encounter(node, 59, 60, 24)
+                # carlo hammer
+                if node.ab_pos == (4, 8):
+                    self.encounter(node, 61, 62, 25)
+                # johnny hands boss fight
+                if node.ab_pos == (6, 6):
+                    self.encounter(node, 63, 64, 26)
+                # vito savage
+                if node.ab_pos == (5, 4):
+                    self.encounter(node, 65, 66, 27)
+                # antonio viper
+                if node.ab_pos == (2, 5):
+                    self.encounter(node, 67, 68, 28)
+                # incendiary giovanni
+                if node.ab_pos == (1, 3):
+                    self.encounter(node, 69, 70, 29)
+                # salvatore scarface
+                if node.ab_pos == (3, 1):
+                    self.encounter(node, 71, 72, 30)
+                # francesco pistolero
+                if node.ab_pos == (7, 2):
+                    self.encounter(node, 73, 74, 31)
+                
 
         elif self.level.theme == "cp":
             pass
@@ -263,7 +306,10 @@ class EventManager():
             self.level.equipment.update_item = True
         
         # decide if it is a special NPC fight scene
-        self.special = True if scene >= 15 else False
+        if self.level.theme == "md":
+            self.special = True if scene >= 15 else False
+        elif self.level.theme == "gs":
+            self.special = True if scene >= 32 else False
 
         # if it is a special NPC fight
         if self.special:
@@ -320,7 +366,10 @@ class EventManager():
         elif self.level.player.rect.collidepoint(node.rect.center):
             # when the player move to other node other than the village, disable exiting
             # meaning that the player already exit, village can be shown again when re-enter
-            if node.ab_pos != (8, 9): self.level.player.exiting = False
+            if self.level.theme == "md":
+                if node.ab_pos != (8, 9): self.level.player.exiting = False
+            elif self.level.theme == "gs":
+                if node.ab_pos != (8, 13): self.level.player.exiting = False
 
             self.dialog.start_dialog(before_dialog)
 
@@ -329,7 +378,14 @@ class EventManager():
                 # when fight first starts
                 if self.dialog.dialog_end and scene not in self.level.battle.finished_battle:
                     self.node_replaced = False
-                    self.battle.start(self.level.enemy_sprites.sprites()[scene], scene)
+                    # find the cooresponding enemy index
+                    # enemies in different theme are in a same dict
+                    # therefore offset for each theme is needed
+                    index = scene
+                    for enemy in self.level.enemy_sprites.sprites():
+                        if enemy.theme == "gs":
+                            index = scene - 20
+                    self.battle.start(self.level.enemy_sprites.sprites()[index], scene)
                     self.dialog.end_battle_dialog_end = False
                 # after finishing the battle
                 if scene in self.level.battle.finished_battle:
