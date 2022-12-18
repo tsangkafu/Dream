@@ -16,7 +16,7 @@ class Player(pygame.sprite.Sprite):
         self.hp = 100
         self.exp = 25
         self.exp_to_upgrade = 9999
-        self.attack = 999
+        self.attack = 20
         self.defense = 4
         self.money = 0
         self.items = []

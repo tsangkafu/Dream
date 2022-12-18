@@ -50,22 +50,23 @@ class SFX():
             self.bgm = pygame.mixer.Sound("./sfx/gs/world_bgm.wav")
             self.ambient = pygame.mixer.Sound("./sfx/gs/ambient.wav")
             self.walk = pygame.mixer.Sound("./sfx/md/walking.wav")
-            self.enemy_slash = pygame.mixer.Sound("./sfx/md/enemy_slash.wav")
+            self.enemy_slash = pygame.mixer.Sound("./sfx/gs/enemy_slash.wav")
             self.umph = pygame.mixer.Sound("./sfx/md/umph.wav")
             self.page_turn = pygame.mixer.Sound("./sfx/md/page_turn.wav")
             self.equip = pygame.mixer.Sound("./sfx/md/equip.wav")
-            self.blood = pygame.mixer.Sound("./sfx/md/blood.wav")
-            self.draw_sword = pygame.mixer.Sound("./sfx/md/draw_sword.wav")
+            self.blood = pygame.mixer.Sound("./sfx/gs/blood.wav")
+            self.draw_sword = pygame.mixer.Sound("./sfx/gs/draw_sword.wav")
             self.bonfire = pygame.mixer.Sound("./sfx/md/bonfire.wav")
             self.scream = pygame.mixer.Sound("./sfx/md/scream.wav")
             self.door_open = pygame.mixer.Sound("./sfx/md/door_open.wav")
-            self.player_miss = pygame.mixer.Sound("./sfx/md/player_miss.wav")
-            self.enemy_miss = pygame.mixer.Sound("./sfx/md/enemy_miss.wav")
+            self.player_miss = pygame.mixer.Sound("./sfx/gs/player_miss.wav")
+            self.enemy_miss = pygame.mixer.Sound("./sfx/gs/enemy_miss.wav")
             self.falling = pygame.mixer.Sound("./sfx/md/falling.wav")
             
             self.player_slashs = []
-            for i in range(8):
-                self.player_slashs.append(pygame.mixer.Sound(f"./sfx/md/player_slash_{i}.wav"))
+            for i in range(1):
+                self.player_slashs.append(pygame.mixer.Sound(f"./sfx/gs/player_slash_{i}.wav"))
+            print(self.player_slashs)
 
             self.monster_roars = []
             for i in range(15):

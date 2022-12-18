@@ -65,3 +65,13 @@ Door Open Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_sour
 Music by <a href="https://pixabay.com/users/qubesounds-24397640/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=121463">QubeSounds</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=121463">Pixabay</a>
 
 Ambient Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6762">Pixabay</a>
+
+Player Gunshot 0 Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=39860">Pixabay</a>
+
+Enemy Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=40780">Pixabay</a>
+
+Bullet Shell Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=39791">Pixabay</a>
+
+Load Bullet Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=105837">Pixabay</a>
+
+All Bullet Miss Sound Effect from <a href="https://www.youtube.com/watch?v=d439JLiphkw&ab_channel=SoundEffectsFactory">YouTube</a>

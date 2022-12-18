@@ -30,8 +30,8 @@ class Battle():
         self.damage_font = pygame.font.Font(FONT, 50)
         
         # indicate the frame of the attack animation
-        self.player_attack_animation = 0
-        self.enemy_attack_animation = 0
+        self.player_attack_animation = -0.3
+        self.enemy_attack_animation = -0.3
 
         self.attack_animation_end = False
         self.damage_animation_end = False
@@ -54,18 +54,24 @@ class Battle():
             self.player_attack = [
                 pygame.image.load(os.path.join("./graphics/animation/" + self.theme, "player_attack_1" + ".png")).convert_alpha(),
                 pygame.image.load(os.path.join("./graphics/animation/" + self.theme, "player_attack_2" + ".png")).convert_alpha()]
-            self.enemy_attack = [
-                pygame.image.load(os.path.join("./graphics/animation/" + self.theme, "enemy_attack_1" + ".png")).convert_alpha(),
-                pygame.image.load(os.path.join("./graphics/animation/" + self.theme, "enemy_attack_2" + ".png")).convert_alpha()]
-            self.player_info = pygame.image.load(os.path.join("./graphics/ui/" + theme, "player_info.png")).convert_alpha()
-            self.enemy_info = pygame.image.load(os.path.join("./graphics/ui/" + theme, "enemy_info.png")).convert_alpha()
         except:
             self.player_attack = [
                 pygame.image.load(os.path.join("./graphics/animation/md", "player_attack_1" + ".png")).convert_alpha(),
                 pygame.image.load(os.path.join("./graphics/animation/md", "player_attack_2" + ".png")).convert_alpha()]
+        try:
+            
             self.enemy_attack = [
+                pygame.image.load(os.path.join("./graphics/animation/" + self.theme, "enemy_attack_1" + ".png")).convert_alpha(),
+                pygame.image.load(os.path.join("./graphics/animation/" + self.theme, "enemy_attack_2" + ".png")).convert_alpha()]
+        except: 
+            self.enemy_attack = [ 
                 pygame.image.load(os.path.join("./graphics/animation/md", "enemy_attack_1" + ".png")).convert_alpha(),
                 pygame.image.load(os.path.join("./graphics/animation/md", "enemy_attack_2" + ".png")).convert_alpha()]
+        
+        try:
+            self.player_info = pygame.image.load(os.path.join("./graphics/ui/" + theme, "player_info.png")).convert_alpha()
+            self.enemy_info = pygame.image.load(os.path.join("./graphics/ui/" + theme, "enemy_info.png")).convert_alpha()
+        except:
             self.player_info = pygame.image.load(os.path.join("./graphics/ui/md", "player_info.png")).convert_alpha()
             self.enemy_info = pygame.image.load(os.path.join("./graphics/ui/md", "enemy_info.png")).convert_alpha()
 
@@ -201,7 +207,7 @@ class Battle():
         def show_slash():
             # make sure it is player's round before attacking
             if self.player_round:
-                self.player_attack_animation += 0.2
+                self.player_attack_animation += 0.15
                 # when the attack animation finishes, deduct health point
                 if self.player_attack_animation >= len(self.player_attack):
                     self.player_attack_animation = 0
@@ -223,7 +229,7 @@ class Battle():
                         self.attack_pos)
             
             elif not self.player_round:
-                self.enemy_attack_animation += 0.2
+                self.enemy_attack_animation += 0.15
                 if self.enemy_attack_animation >= len(self.enemy_attack):
                     self.enemy_attack_animation = 0
                     self.attack_animation_end = True
