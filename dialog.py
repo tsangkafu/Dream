@@ -166,7 +166,7 @@ class DialogManager():
                 
         for scene in scene_nums:
             scenes[scene] = hidden_scenes[scene]
-            # update the npc dialog option
+        # update the npc dialog option
         for npc in self.scene_sprites:
             if type(npc) == NPC:
                 npc.get_dialog()

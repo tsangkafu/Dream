@@ -36,6 +36,8 @@ class SFX():
             self.player_miss = pygame.mixer.Sound("./sfx/md/player_miss.wav")
             self.enemy_miss = pygame.mixer.Sound("./sfx/md/enemy_miss.wav")
             self.falling = pygame.mixer.Sound("./sfx/md/falling.wav")
+            self.healing = pygame.mixer.Sound("./sfx/md/healing.wav")
+            self.reignite = pygame.mixer.Sound("./sfx/md/reignite.wav")
             
             self.player_slashs = []
             for i in range(8):
@@ -62,6 +64,8 @@ class SFX():
             self.player_miss = pygame.mixer.Sound("./sfx/gs/player_miss.wav")
             self.enemy_miss = pygame.mixer.Sound("./sfx/gs/enemy_miss.wav")
             self.falling = pygame.mixer.Sound("./sfx/md/falling.wav")
+            self.healing = pygame.mixer.Sound("./sfx/md/healing.wav")
+            self.reignite = pygame.mixer.Sound("./sfx/md/reignite.wav")
             
             self.player_slashs = []
             for i in range(1):

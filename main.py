@@ -9,10 +9,9 @@ class Game:
     def __init__(self):
         pygame.mixer.pre_init(22050, -16, 2, 2048)
         pygame.init()
-        self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         pygame.display.set_caption("Dream")
         self.clock = pygame.time.Clock()
-        self.level = Level("md", self.screen)
+        self.level = Level()
         self.changed_level = True
 
     def run(self):

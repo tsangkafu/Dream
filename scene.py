@@ -23,7 +23,7 @@ scenes = {
         ("Lucas Vopiscus", "I can hear it behind me."),
         ("Lucas Vopiscus", "Please give me strength.")],
     5: [
-        ("Lucas Vopiscus", "One more strike and I am done.")],
+        ("Lucas Vopiscus", "I am getting better with every battle I face.")],
     6: [
         # corpsesword
         ("Lucas Vopiscus", "The smell of death....this does not feel right!")],
@@ -72,7 +72,7 @@ scenes = {
         # dreadsnare
         ("Dreadsnare", "...")],
     16: [
-        ("Lucas Vopiscus", "How many more battles must I endure?")],
+        ("Lucas Vopiscus", "There's a village here. Maybe I should have a look.")],
     17: [
         # defiant hunter
         ("Defiant Hunter", "Stop here."),
@@ -87,7 +87,8 @@ scenes = {
         ("Flamepod", "KILL!")],
     20: [
         ("Lucas Vopiscus", "The flint..."),
-        ("Lucas Vopiscus", "Maybe I can use it."),],
+        ("Lucas Vopiscus", "Maybe I can use it."),
+        (" ", "Click on the flint in your inventory and use it to reignite the bonfires."),],
     21: [
         # grimescream
         ("Grimescream", "..."),
@@ -139,6 +140,17 @@ scenes = {
         ("Lucas Vopiscus", "I did what I needed to. Now rest.")],
     32.5: [
         ("Lucas Vopiscus", "A wretched soul...")],
+
+    # reminder
+    40: [
+        ("Lucas Vopiscus", "Ursinus is probably up to something. Better get my gear ready just in case."),
+        (" ", "You need to keep track of your equipment throughout the journey."),
+        (" ", "To do this, click on the status bar to access the inventory."),
+    ],
+    41: [
+        ("Lucas Vopiscus", "Ursinus, I stand ready to face you, my weapon in hand."),
+        ("Lucas Vopiscus", "Time to redeem yourself.")
+    ],
 
     # chapter 2
     50: [
@@ -452,7 +464,8 @@ scenes = {
         ("Lucas Vopiscus", "I want to know who I am."),
         ("Prudentius Stolo", "That's easy to answer. You're a stupid and arrogant fool, and that is enough."),
         (" ", "Prudentius does not want to continue the conversation."),
-        (" ", "Yet you feel that your wounds have been healed.")],
+        (" ", "As if by magic, your wounds are suddenly healed."),
+        ("Lucas Vopiscus", "What happened?")],
     302: [
         ("Lucas Vopiscus", "Greeting."),
         ("Maire Whelani", "...")],
@@ -467,7 +480,10 @@ scenes = {
         ("Egnatius Barbatus", "It is up to you, dreamer.")],
     305: [
         ("Iduma Macer", "..."),
-        (" ", "Iduma does not want to start the conversation.")]
+        (" ", "Iduma does not want to start the conversation."),
+        (" ", "You suddenly feel a strange energy coursing through your veins."),
+        (" ", "Your wounds, which had seemed so severe just moments before..."),
+        (" ", "...begin to close and heal before your very eyes.")]
 
 }
 

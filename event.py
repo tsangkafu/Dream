@@ -2,9 +2,9 @@ from nodes import Node
 from settings import *
 
 class EventManager():
-    def __init__(self, level):
+    def __init__(self, level, dialog):
         self.level = level
-        self.dialog = self.level.dialog
+        self.dialog = dialog
         self.battle = self.level.battle
         self.node_replaced = False
         self.bonfire_checked = False
@@ -99,6 +99,14 @@ class EventManager():
                     if NPC.name == "Prudentius Stolo" and not NPC.help_recover:
                         NPC.help_recover = True
                         self.level.player.hp = self.level.player.max_hp
+                        self.level.sfx.plot_channel.play(self.level.sfx.healing)
+
+            if 305 in self.dialog.finished_scenes:
+                for NPC in self.level.npc_sprites:
+                    if NPC.name == "Iduma Macer" and not NPC.help_recover:
+                        NPC.help_recover = True
+                        self.level.player.hp = self.level.player.max_hp
+                        self.level.sfx.plot_channel.play(self.level.sfx.healing)
 
             """
             Handle scenes related to collision
@@ -145,12 +153,22 @@ class EventManager():
                 # dreadsnare
                 if node.ab_pos == (4, 9):
                     self.encounter(node, 15, 16, 6)
+                    # prompt the user to be careful after being told by Ursinus to meet at the cliff
+                    if 501 in self.dialog.finished_scenes and self.level.player.rect.colliderect(node.rect):
+                        self.dialog.start_dialog(40)
+                    # prompt the user before Ursinus boss fight
+                    if 502 in self.dialog.finished_scenes and self.level.player.rect.colliderect(node.rect):
+                        self.dialog.start_dialog(41)
+
                 # defiant hunter & special encounter with Ursinus
                 if node.ab_pos == (1, 8):
                     self.encounter(node, 17, 18, 7)
+
+                    # encounter with Ursinus
                     if 501 in self.dialog.finished_scenes and self.level.player.rect.colliderect(node.rect):
                         self.dialog.unlock_scene([502])
                         self.dialog.start_dialog(502)
+
                     if 502 in self.dialog.finished_scenes \
                     and 14.5 not in self.dialog.finished_scenes \
                     and 502.5 not in self.dialog.finished_scenes:
@@ -316,6 +334,9 @@ class EventManager():
 
     def encounter(self, node, before_dialog, after_dialog, scene):
         def replace_node():
+            # player the healing sound effect
+            if node.node_type == "bonfire":
+                self.level.sfx.plot_channel.play(self.level.sfx.healing)
             # change the node type to a fade
             node.node_type = node.node_type + "_faded"
             # update the image to a faded node

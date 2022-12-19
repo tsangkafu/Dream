@@ -193,8 +193,8 @@ ENEMIES = {
         "name": "Behemoth",
         "max_hp": 500,
         "hp": 500,
-        "attack": 120,
-        "defense": 60,
+        "attack": 80,
+        "defense": 40,
         "exp": 1500,
         "items": ["Heartseeker"],
         "money": 30,
@@ -227,11 +227,11 @@ ENEMIES = {
     15: {
         "theme": "md",
         "name": "MAIRE",
-        "max_hp": 100,
-        "hp": 100,
-        "attack": 14,
-        "defense": 5,
-        "exp": 80,
+        "max_hp": 400,
+        "hp": 400,
+        "attack": 110,
+        "defense": 10,
+        "exp": 1500,
         "items": ["Artificer's Opus"],
         "money": 30,
         "h_offset": 150,
@@ -263,11 +263,11 @@ ENEMIES = {
     18: {
         "theme": "md",
         "name": "EGNATIUS",
-        "max_hp": 100,
-        "hp": 100,
-        "attack": 14,
-        "defense": 5,
-        "exp": 80,
+        "max_hp": 500,
+        "hp": 500,
+        "attack": 90,
+        "defense": 50,
+        "exp": 2000,
         "items": ["Nerves of Steel"],
         "money": 30,
         "h_offset": 0,
@@ -467,14 +467,14 @@ ITEMS = {
     },
     "heartseeker": {
         "type": 1,
-        "attack": 13,
-        "defense": 2,
+        "attack": 80,
+        "defense": 0,
         "value": 15
     },
     "kinslayer": {
         "type": 1,
-        "attack": 17,
-        "defense": 1,
+        "attack": 35,
+        "defense": 0,
         "value": 18
     },
     "honor's_call":{
@@ -497,8 +497,8 @@ ITEMS = {
     },
     "raddle": {
         "type": 1,
-        "attack": 50,
-        "defense": -20,
+        "attack": 60,
+        "defense": -15,
         "value": 50
     },
     "verdict": {
@@ -522,8 +522,8 @@ ITEMS = {
     # shields
     "artificer's_opus": {
         "type": 2,
-        "attack": 20,
-        "defense": 10,
+        "attack": 15,
+        "defense": 40,
         "value": 50
     },
     "myrkul's_mirror": {

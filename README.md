@@ -6,7 +6,8 @@ Background Music by <a href="https://pixabay.com/users/sergequadrado-24990007/?u
 
 Ambient Sound Effect by <a href="https://pixabay.com/users/666herohero-25759907/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=21834">666HeroHero</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=21834">Pixabay</a>
 
-Sound Effect:
+Healing Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=5856">Pixabay</a>
+
 Walking Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6133">Pixabay</a>
 
 All Player Slash and Miss Sound Effect from <a href="https://www.youtube.com/watch?v=EgRvVq8mStE&ab_channel=IsolationMusic">YouTube</a>

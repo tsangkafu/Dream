@@ -217,7 +217,7 @@ class Battle():
                         int(self.player.actual_attack * 0.7),
                         int(self.player.actual_attack * 1.2)) - self.enemy.defense
                     # 15% chance of missing
-                    self.damage = 0 if random.randint(1, 100) > 85 else self.damage
+                    self.damage = 0 if random.randint(1, 100) > 90 else self.damage
                     if self.damage > 0:
                         self.enemy.hp -= self.damage
                         self.sfx.fight_channel.play(self.sfx.player_slashs[random.randint(0, len(self.sfx.player_slashs) - 1)])
@@ -237,7 +237,7 @@ class Battle():
                         int(self.enemy.attack * 0.7),
                         int(self.enemy.attack * 1.2)) - self.player.defense
                     # 15% chance of missing
-                    self.damage = 0 if random.randint(1, 100) > 85 else self.damage
+                    self.damage = 0 if random.randint(1, 100) > 90 else self.damage
                     if self.damage > 0:
                         self.player.hp -= self.damage
                         self.sfx.fight_channel.play(self.sfx.enemy_slash)

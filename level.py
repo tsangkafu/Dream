@@ -15,6 +15,7 @@ from equipment import Equipment
 from npc import NPC
 from sfx import *
 from map.gangster import *
+from scene import *
 import random
 
 
@@ -22,24 +23,9 @@ import random
 Common behaviors in different levels.
 """ 
 class Level:
-    def __init__(self, theme, screen):
-        self.sfx = SFX(theme)
-        # get the display surface
-        self.screen = screen
+    def __init__(self):
         # md = medieval, gs = gangster, cp = cyberpunk
-        self.theme = theme
-        try:
-            self.background = pygame.image.load(os.path.join("./graphics/map/" + self.theme, "world_map.png")).convert_alpha()
-        except:
-            self.background = pygame.image.load(os.path.join("./graphics/map/md", "world_map.png")).convert_alpha()
-
-        try:
-            self.village = pygame.image.load(os.path.join("./graphics/map/" + self.theme, "village.png")).convert_alpha()
-        except:
-            self.village = pygame.image.load(os.path.join("./graphics/map/md", "village.png")).convert_alpha()
-
-        self.game_menu = Menu("game_menu")
-        self.game_over_menu = Menu("game_over")
+        self.theme = "md"
         self.reset_level()
         
     def run(self):
@@ -309,6 +295,7 @@ class Level:
                                         if (node.node_type == "bonfire_faded"):
                                             node.node_type = "bonfire"
                                             node.image = node.get_image(node.node_type)
+                                            self.sfx.fight_channel.play(self.sfx.reignite)
                             
                             # setting this flag will result in fixing selected item constantly showing
                             self.equipment.changing_item = True
@@ -363,6 +350,27 @@ class Level:
                     Node(self.theme, (x, y), (j, i), "boss", [self.node_sprites])
 
     def reset_level(self):
+        self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
+        self.sfx = SFX(self.theme)
+
+        # the scene has been modified, back up to its origin form
+        for key in hidden_scenes:
+            if key in scenes:
+                scenes.pop(key)
+
+        # get the display surface
+        try:
+            self.background = pygame.image.load(os.path.join("./graphics/map/" + self.theme, "world_map.png")).convert_alpha()
+        except:
+            self.background = pygame.image.load(os.path.join("./graphics/map/md", "world_map.png")).convert_alpha()
+        try:
+            self.village = pygame.image.load(os.path.join("./graphics/map/" + self.theme, "village.png")).convert_alpha()
+        except:
+            self.village = pygame.image.load(os.path.join("./graphics/map/md", "village.png")).convert_alpha()
+
+        self.game_menu = Menu("game_menu")
+        self.game_over_menu = Menu("game_over")
+
         # spites group
         self.player_sprites = pygame.sprite.Group()
         self.enemy_sprites = pygame.sprite.Group()
@@ -388,7 +396,7 @@ class Level:
         # 1 = in battle
         self.status = -1
         self.status_bar = Status(self.screen, self.ui_sprites, self.theme, self.player)
-        self.event = EventManager(self)
+        self.event = EventManager(self, self.dialog)
         # indicating whether the player is in village
         self.in_village = False
         # equipment ui
