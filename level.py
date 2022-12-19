@@ -392,7 +392,7 @@ class Level:
         # indicating whether the player is in village
         self.in_village = False
         # equipment ui
-        self.equipment = Equipment(self.screen, self.theme, self.equipment_sprites, self.player, self.sfx)
+        self.equipment = Equipment(self.screen, self.theme, self.equipment_sprites, self.player, self.sfx) 
         # create enemies and put them into the sprite group
         for i in ENEMIES:
             if ENEMIES[i]["theme"] == self.theme:

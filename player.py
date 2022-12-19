@@ -14,8 +14,8 @@ class Player(pygame.sprite.Sprite):
         self.level = 1
         self.max_hp = 100
         self.hp = 100
-        self.exp = 25
-        self.exp_to_upgrade = 9999
+        self.exp = 0
+        self.exp_to_upgrade = 100
         self.attack = 20
         self.defense = 4
         self.money = 0
@@ -94,10 +94,11 @@ class Player(pygame.sprite.Sprite):
     def upgrade(self):
             self.level += 1
             self.exp = self.exp - self.exp_to_upgrade
-            self.exp_to_upgrade *= 2
-            self.max_hp = self.level * 25 + 80
+            self.exp_to_upgrade *= 1.5
+            self.max_hp = self.level * 30 + 80
             self.attack = self.level * 5 + 15
             self.defense = self.level * 4
+            self.hp = self.max_hp
 
     def draw(self):
         self.screen.blit(self.image, self.pos)

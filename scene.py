@@ -23,7 +23,7 @@ scenes = {
         ("Lucas Vopiscus", "I can hear it behind me."),
         ("Lucas Vopiscus", "Please give me strength.")],
     5: [
-        ("Lucas Vopiscus", "The battle is over, but the karma remain.")],
+        ("Lucas Vopiscus", "One more strike and I am done.")],
     6: [
         # corpsesword
         ("Lucas Vopiscus", "The smell of death....this does not feel right!")],
@@ -148,97 +148,286 @@ scenes = {
         ("Lucio Santarossa", "My heart is racing and my stomach is churning.")],
     51: [
         # mario maddog
-        ("Mario Maddog", "Can't remember how I got here."),
-        ("Lucio Santarossa", "It feels like I just woke up from a long dream."),
-        ("Mario Maddog", "My heart is racing and my stomach is churning.")],
+        ("Mario Maddog", "You think you're clever, don't you, Lucio?"),
+        ("Mario Maddog", " No one can steal from Noitpmeder and get away with it."),
+        ("Lucio Santarossa", "I don't know what you're talking about."),
+        ("Lucio Santarossa", "I'm just a simple businessman trying to make a living."),
+        ("Lucio Santarossa", "I have no beef with Noitpmeder."),
+        ("Mario Maddog", "Don't play coy with me, Lucio. The whole organization is hunting you down."),
+        ("Lucio Santarossa", "I am not too worried if the organization only sends punks like you."),
+        ("Lucio Santarossa", "Also, you better keep both of your hands in your pockets."),
+        ("Mario Maddog", "What if I don't? You think you are faster than the bullet?"),
+        ("Lucio Santarossa", "Probably not, but my finger is definitely faster than yours.")],
     52: [
-        # pietro ferocious
-        ("Lucio Santarossa", "Can't remember how I got here."),
-        ("Lucio Santarossa", "It feels like I just woke up from a long dream.")],
+        ("Lucio Santarossa", "I don't usually fight under a hangover, but I still haven't lost my touch.")],
     53: [
-        ("Pietro Ferocious", "Stop there."),
-        ("Lucio Santarossa", "Can't remember how I got here."),
+        # pietro ferocious
+        ("Pietro Ferocious", "One step further and I'll turn your brain into spaghetti."),
+        ("Lucio Santarossa", "Who are you? Another mafia goon trying to rob a innocent civilian?"),
+        ("Pietro Ferocious", "You know exactly why I'm here, Lucio."),
+        ("Pietro Ferocious", "You swiped something from us, and now you're gonna pay the price."),
+        ("Lucio Santarossa", "If you were gonna make a move, you would have done it already."),
+        ("Lucio Santarossa", "So what do you want from me?"),
+        ("Pietro Ferocious", "The whereabouts of the goods you stole from us."),
+        ("Lucio Santarossa", "I didn't steal anything. You've got the wrong guy."),
+        ("Pietro Ferocious", "Maybe a few bullets in your gut will help you find your memory.")
     ],
     54: [
-        # boss fight with frankie blades
-        ("Frankie Blades", "Stop there."),
-        ("Lucio Santarossa", "Can't remember how I got here."),
+        ("Lucio Santarossa", "Noitpmeder doesn't go down easily. They will be back for more."),
     ],
     55: [
         # frankie blades
-        ("Frankie Blades", "Stop there."),
-        ("Lucio Santarossa", "Can't remember how I got here.")
+        ("Frankie Blades", "..."),
+        ("Lucio Santarossa", "Who the heck are you? Circus knife juggler?"),
+        ("Frankie Blades", "I'm not in the mood for jokes. Where's the goods?"),
+        ("Lucio Santarossa", "I don't know."),
+        ("Frankie Blades", "Well, my knife will loosen your tongue."),
+        ("Lucio Santarossa", "Whoa, whoa, let's not get crazy here."),
+        ("Lucio Santarossa", "Can't we just talk this out like civilized people?"),
+        ("Frankie Blades", "I'm all out of words. Time for action."),
         ],
     56: [
-        ("Lucio Santarossa", "Does not worth my ")
+        ("Lucio Santarossa", "What about all those knifes and blades? This dude just shot right at my face.")
         ],
     57: [
         # davide coldblooded
-        ("Davide Coldblooded", "...")
+        ("Davide Coldblooded", "..."),
+        ("Lucio Santarossa", "What's the deal with your suit?"),
+        ("Davide Coldblooded", "You don't like my suit? I had it specially made. Cost me a fortune."),
+        ("Lucio Santarossa", "I'm sorry, I didn't mean to offend you."),
+        ("Lucio Santarossa", "It's just a little unusual to see a 50 year-old man wearing pink."),
+        ("Davide Coldblooded", "Age is just a number. And pink is the color of love, my friend."),
+        ("Lucio Santarossa", "I see your point. So, what brings you here today?"),
+        ("Davide Coldblooded", "I'm here to collect a debt."),
+        ("Lucio Santarossa", "I don't owe anyone anything."),
+        ("Davide Coldblooded", "Is that so? I'm afraid I might have to resort to other kinds of persuasion.")
         ],
     58: [
-        ("Lucio Santarossa", "Does not worth my ")
+        ("Lucio Santarossa", "You and your fancy Italian suits aren't so tough when you're on the ground.")
         ],
     59: [
         # angelo the animal
-        ("Angelo The Animal", "Does not worth my "),
-        ("Lucio Santarossa", "Does not worth my ")
+        ("Angelo The Animal", "Well, well, well. Look what we have here."),
+        ("Lucio Santarossa", "Angelo the Animal, I know you."),
+        ("Angelo The Animal", "You think you can just walk away from Noitpmeder?"),
+        ("Angelo The Animal", "Do you know what I did to the last guy who tried to mess with us?"),
+        ("Lucio Santarossa", "I'm sure it was something very charming."),
+        ("Angelo The Animal", "I killed his pregnant wife in front of him. And then I killed him too."),
+        ("Lucio Santarossa", "That's quite an impressive resume you've got there."),
+        ("Lucio Santarossa", "But I'm not impressed by your threats."),
+        ("Angelo The Animal", "We'll see who's laughing when I'm standing over your lifeless body."),
         ],
-    60: [("Lucio Santarossa", "Does not worth my ")
+    60: [("Lucio Santarossa", "He is really an animal...")
     ],    
     61: [
         # carlo hammer
-        ("Carlo Hammer", "Does not worth my ")
+        ("Carlo Hammer", "Ah, Lucio Santarossa. The man who dared to cross Noitpmeder."),
+        ("Carlo Hammer", "I heard you're on the run. How's it going so far?"),
+        ("Lucio Santarossa", "Not bad, I have taken care of a few pests standing in my way."),
+        ("Lucio Santarossa", "I've heard of your reputation."),
+        ("Lucio Santarossa", "But you don't seem like the kind of man who'd be a member of Noitpmeder."),
+        ("Carlo Hammer", "They paid me to deal with little thieves like you."),
+        ("Carlo Hammer", "They liked working with me because I don't mind getting my hands dirty."),
+        ("Carlo Hammer", "I've killed men, women, and even kids."),
+        ("Lucio Santarossa", "Do you enjoy killing innocent people?"),
+        ("Carlo Hammer", "It's nothing personal, Lucio. It's strictly business."),
+        ("Carlo Hammer", "But to be honest, the screams of the kids are music to my ears."),
+        ("Carlo Hammer", "And soon enough your screams will constitute music too."),
+        ("Lucio Santarossa", "You're just a hired muscle with a twisted brain."),
+        ("Lucio Santarossa", "This is between me and Noitpmeder, you have no say in the matter."),
+        ("Carlo Hammer", "I may not have a say, but I sure as hell have a lot of firepower.")
         ],
     62: [
-        ("Lucio Santarossa", "Does not worth my ")
+        ("Lucio Santarossa", "You're a monster, and I hope you rot in hell.")
         ],
     63: [
         # johhny hands boss fight
-        ("Lucio Santarossa", "Does not worth my "),
-        ("Johhny Hands", "Does not worth my ")
+        ("Lucio Santarossa", "Hey Johnny, the Journalist of the Year."),
+        ("Lucio Santarossa", "I just want to express my appreciation with a few bullets on your face."),
+        ("Johnny Hands", "Big words from a man who's on the run."),
+        ("Johnny Hands", "You thought you were going to take me down single-handedly?"),
+        ("Lucio Santarossa", "I don't need any help taking out scum like you."),
+        ("Lucio Santarossa", "I've got more experience in my little finger..."),
+        ("Lucio Santarossa", "...than you've got in your whole body."),
+        ("Johnny Hands", "You reall think I make my living using a pen?"),
+        ("Lucio Santarossa", "We'll see about that. Draw your weapon and let's settle this like men."),
     ],
     64: [
-        ("Lucio Santarossa", "Does not worth my "),
-        ("Johhny Hands", "Does not worth my ")
+        ("Lucio Santarossa", "Looks like I'm the one standing here."),
+        ("Lucio Santarossa", "You couldn't even hit the broad side of a barn, Johnny."),
+        ("Lucio Santarossa", "Well, it looks like I'll have to go to another bar to seek more information.")
     ],
     65: [
         # vito savage
-        ("Lucio Santarossa", "Does not worth my "),
-        ("Vito Savage", "Does not worth my ")
+        ("Vito Savage", "Lucio Santarossa, always causing trobule."),
+        ("Lucio Santarossa", "I'm not the one kidnapping women and turning them into prostitutes."),
+        ("Vito Savage", "That's just business, Lucio. You should know that better than anyone."),
+        ("Lucio Santarossa", "I may have done some questionable things in my time."),
+        ("Lucio Santarossa", "But I've never sunk as low as you."),
+        ("Vito Savage", "We all have our own morals, Lucio."),
+        ("Vito Savage", "But right now, I'm more interested in taking you down.")
     ],
     66: [
-        ("Lucio Santarossa", "Does not worth my ")
+        ("Lucio Santarossa", "Can't believe it. You were actually a decent shot.")
     ],
     67: [
         # antonio viper
-        ("Lucio Santarossa", "Does not worth my "),
-        ("Antonio Viper", "Does not worth my ")
+        ("Antonio Viper", "..."),
+        ("Lucio Santarossa", "Antonio Viper, the most skilled assassin in Noitpmeder."),
+        ("Antonio Viper", "Oh, I'm flattered."),
+        ("Antonio Viper", "It's not often I get recognized by someone outside of our organization."),
+        ("Lucio Santarossa", "You have a reputation for being incredibly precise and efficient."),
+        ("Antonio Viper", "Efficiency is key in my line of work."),
+        ("Lucio Santarossa", "But I've also heard that you have a taste for causing pain."),
+        ("Antonio Viper", "I can't deny that I have a certain...flair for the dramatic."),
+        ("Antonio Viper", "Sometimes a slow and painful death can send a stronger message."),
+        ("Lucio Santarossa", "I can see why they call you the Viper."),
+        ("Antonio Viper", "Precisely. And I have many tricks up my sleeve. You will see.")
     ],
     68: [
-        ("Lucio Santarossa", "Does not worth my ")
+        ("Lucio Santarossa", "That was a close one, Antonio. You almost had me there."),
+        ("Lucio Santarossa", "I had to use every trick in the book to take you down.")
     ],
     69: [
         # incendiary giovanni
-        ("Incendiary Giovanni", "Does not worth my "),
-        ("Lucio Santarossa", "Does not worth my ")
+        ("Incendiary Giovanni", "..."),
+        ("Lucio Santarossa", "Incendiary Giovanni, the bomb man."),
+        ("Lucio Santarossa", "You're the go-to guy for taking care of problems with fire and explosives."),
+        ("Lucio Santarossa", " A true expert in the art of destruction."),
+        ("Incendiary Giovanni", "They can be very useful in certain situations."),
+        ("Lucio Santarossa", "Like when you burn down a building or bomb someone to smithereens?"),
+        ("Incendiary Giovanni", "Those are just a couple of my specialties."),
+        ("Incendiary Giovanni", "I've been known to take care of debts for Noitpmeder in that way."),
+        ("Incendiary Giovanni", "But since you know me, then you must know what I am for."),
+        ("Incendiary Giovanni", "Let's see if you can handle the heat.")
     ],
     70: [
-        ("Lucio Santarossa", "Does not worth my ")
+        ("Lucio Santarossa", "Turning your own explosives against you was a stroke of genius."),
+        ("Lucio Santarossa", "That's how a true artist of destruction should end."),
+        ("Lucio Santarossa", "In a blaze of glory, so to speak.")
     ],
     71: [
         # salvatore scarface
-        ("Salvatore Scarface", "Does not worth my ")
+        ("Salvatore Scarface", "So, you're the one who stole the whisky from the organization."),
+        ("Lucio Santarossa", "Salvatore, head of drugs and debts department in Noitpmeder, I presume?"),
+        ("Salvatore Scarface", "The one and only. What else have you heard?"),
+        ("Lucio Santarossa", "That you lure people in with your drugs and then trap them with debts."),
+        ("Salvatore Scarface", "I don't take kindly to people who don't pay their debts."),
+        ("Salvatore Scarface", "And I'll do whatever it takes to get what's owed to us."),
+        ("Lucio Santarossa", "It shows. You've got quite the collection of scars."),
+        ("Lucio Santarossa", "What happened? Did you mess with the wrong person?"),
+        ("Lucio Santarossa", "Or did someone finally have the balls to fight back?"),
+        ("Lucio Santarossa", "But if you ask me, they only make you look uglier."),
+        ("Salvatore Scarface", "Ha! You think I care about how I look?"),
+        ("Salvatore Scarface", "These scars are a testament to my hard work and dedication."),
+        ("Salvatore Scarface", "And I won't hesitate to add a few more.")
     ],
     72: [
-        ("Lucio Santarossa", "Does not worth my ")
+        ("Lucio Santarossa", "Don't get high on your own supply.")
     ],
     73: [
         # francesco pistolero
-        ("Francesco Pistolero", "asd")
+        ("Lucio Santarossa", "Francesco Pistolero. Your name is on my list."),
+        ("Francesco Pistolero", "Ah, Lucio Santarossa. The man who thinks he can take down Noitpmeder."),
+        ("Lucio Santarossa", "I've been hired to rid the world of your kind."),
+        ("Lucio Santarossa", "I've smoked Johnny Hands. It's now your turn."),
+        ("Francesco Pistolero", "You're just a pawn in a much bigger game."),
+        ("Lucio Santarossa", "I'm tired of your riddles. Let's finish this."),
+        ("Francesco Pistolero", "We'll see about that. Let's dance, Lucio.")
     ],
     74: [
-        ("Lucio Santarossa", "Does not worth my ")
+        ("Francesco Pistolero", "Welcome to the end, Lucio. Or should I say, the beginning?"),
+        ("Lucio Santarossa", "This is your end, not mine."),
+        ("Francesco Pistolero", "You are still dreaming, dreamer."),
+        ("Lucio Santarossa", "No, you are dreaming. Francesco."),
+        ("Lucio Santarossa", "The fear of death made you lost your mind."),
+        ("Francesco Pistolero", "Let me ask you a question, why are you here in the first place?"),
+        ("Lucio Santarossa", "I am here to fight against Noitpmeder."),
+        ("Francesco Pistolero", "Ah, Noitpmeder. The word that haunts your every move."),
+        ("Francesco Pistolero", "But do you really know what it means?"),
+        ("Francesco Pistolero", "Spell it backwards, Lucio. R-E-D-E-M-P-T-I-O-N."),
+        ("Francesco Pistolero", "Now remember something?"),
+        ("Lucio Santarossa", "..."),
+        ("Francesco Pistolero", "The dream will always find a way..."),
+        ("Francesco Pistolero", "...to trick you into thinking you have redeemed yourself."),
+        ("Francesco Pistolero", "Try harder in the next, HAHAHAHAHA!"),
+        (" ", "Francesco Pistolero lay on the ground, defeated and unmoving."),
+        (" ", "You walk away from the fallen Francesco..."),
+        (" ", "...knowing that your journey to redemption has just begun.")
+    ],
+    75: [
+        # bonfire 1
+        ("Lucio Santarossa", "Pour me a glass of that whisky you've got hidden behind the bar."),
+        ("Lucio Santarossa", "I've had a long day running the rackets and I could use a stiff drink."),
+        ("Bartender", "I'm sorry, Lucio. The cops made off with our entire shipment of whisky yesterday."),
+        ("Bartender", "We're fresh out."),
+        ("Lucio Santarossa", "What do you mean the cops took it? Did they have a warrant or something?"),
+        ("Bartender", "No, they just burst in and took whatever they wanted."),
+        ("Bartender", "And when I tried to protest, they threatened to shut us down for good."),
+        ("Lucio Santarossa", "We can't just let them get away with this."),
+        ("Lucio Santarossa", "We have to do something to take back what's rightfully ours."),
+        ("Bartender", "Easy there, Lucio. We can't go starting a war with the cops. They have guns..."),
+        ("Bartender", "...and badges, afterall."),
+        ("Lucio Santarossa", "How am I supposed to unwind without a whisky in hand?"),
+        ("Bartender", "Have you ever tried yoga or meditation?"),
+        ("Lucio Santarossa", "I need something a little more potent than downward dog."),
+        ("Lucio Santarossa", "Perhaps a glass of gin will do the trick?"),
+        ("Bartender", "That I can help you with."),
+        (" ", "You have a sip of that gin but it tastes like shit."),
+        ("Lucio Santarossa", "I'm sick of these law enforcement taking everything we've worked for."),
+        ("Bartender", "Go to another bar in the east, they may need your help on this."),
+        ("Lucio Santarossa", "I will pay a visit when I have time.")],
+    76: [
+        # bonfire 2
+        ("Lucio Santarossa", "Knock knock."),
+        ("Bartender", "What brings Lucio here, who is busy being hunted by Noitpmeder?"),
+        ("Lucio Santarossa", "I heard the cop just seized your entire shipment yesterday."),
+        ("Bartender", "You heard right. That's the usual routine."),
+        ("Bartender", "Noitpmeder takes a cut of our profits..."),
+        ("Bartender", "...and then the cops come in and take the rest."),
+        ("Bartender", "We have been paying off Noitpmeder just to barely keep the doors open."),
+        ("Bartender", "But they are not happy enough..."),
+        ("Bartender", "...and they've got a bunch of reporters hot on our tails."),
+        ("Lucio Santarossa", "How do the reporters fit into all this?"),
+        ("Bartender", "Some of the reporters are in cahoots with Noitpmeder."),
+        ("Bartender", "They investigate our shipments and then report it to the cops."),
+        ("Bartender", "They called it the freedom of the press."),
+        ("Lucio Santarossa", "So Noitpmeder, the cops, and the journalists work together..."),
+        ("Lucio Santarossa", "...to keep a monopoly on bootlegging?"),
+        ("Bartender", "It's a crooked system, that's for sure."),
+        ("Bartender", "I need you to smoke some of those reporters."),
+        ("Bartender", "Maybe then they'll think twice before crossing us again."),
+        ("Lucio Santarossa", "Give me their names."),
+        ("Bartender", "There is a guy called Johnny Hands a few blocks away in north."),
+        ("Bartender", "But be warned that he is not that kind of usual reporters."),
+        ("Lucio Santarossa", "I'll see what I can do."),
+        ("Bartender", "One question before you go."),
+        ("Bartender", "What did you stole from Noitpmeder?"),
+        ("Lucio Santarossa", "Ah, well that's a bit of a long story."),
+        ("Lucio Santarossa", "But let's just say I may or may not have borrowed..."),
+        ("Lucio Santarossa", "...a few of their precious bottles of whisky without asking."),
+        ("Lucio Santarossa", "I was in a bit of a bind and needed a drink to take the edge off."),
+        ("Lucio Santarossa", "Can you blame me for that?"),
+        ("Bartender", "I can't say I blame you, but Noitpmeder won't see it that way."),
+        ("Bartender", "Just be careful out there. Good night and good luck.")],
+    77: [
+        # bonfire 3
+        (" ", "You put Johnny Hands's head on the table."),
+        (" ", "The blood from his wounds is still fresh and dripping."),
+        ("Bartender", "You must be Lucio Santarossa."),
+        ("Lucio Santarossa", "Tell me more about the next reporter."),
+        ("Bartender", "He's been playing both sides for years."),
+        ("Bartender", "Noitpmeder pays him to spy on their competition..."),
+        ("Bartender", "...and he sells information to the highest bidder."),
+        ("Bartender", "He's a slippery one."),
+        ("Lucio Santarossa", "I'm not afraid of Noitpmeder. I'll take them all down, one at a time."),
+        ("Bartender", "I like your spirit, Lucio. But be careful."),
+        ("Bartender", "Noitpmeder runs this whole city..."),
+        ("Bartender", "...from the bootlegging to the gambling to the prostitution."),
+        ("Bartender", "They've got their fingers in every pie, and they won't go down easily."),
+        (" ", "The bartender scribbles a note on a paper and slides it down the bar."),
+        (" ", "The name on the paper is Francesco Pistolero."),
+        ("Lucio Santarossa", "I'll take care of the rest."),
     ],
 
     
@@ -263,7 +452,7 @@ scenes = {
         ("Lucas Vopiscus", "I want to know who I am."),
         ("Prudentius Stolo", "That's easy to answer. You're a stupid and arrogant fool, and that is enough."),
         (" ", "Prudentius does not want to continue the conversation."),
-        ("Lucas Vopiscus", "What a prick. Folks here do not know what is civility.")],
+        (" ", "Yet you feel that your wounds have been healed.")],
     302: [
         ("Lucas Vopiscus", "Greeting."),
         ("Maire Whelani", "...")],
@@ -331,7 +520,7 @@ hidden_scenes = {
         (" ", "One thing you can be sure this time - he is laughing."),
         ("Lucas Vopiscus", "May God grant me vengeance...")],
     405: [
-        ("Lucas Vopiscus", "You will never make it to the next dream, Ursinus.")],
+        ("Lucas Vopiscus", "...")],
     406: [
     # Egnatius Barbatus
         ("Egnatius Barbatus", "Your gravitation is getting stronger with every life you take."),
@@ -393,10 +582,6 @@ hidden_scenes = {
         ("Ursinus Clodianus", "That is the question that plagues us all."),
         ("Ursinus Clodianus", "Some say the only way out is through death."),
         ("Ursinus Clodianus", "But I fear that even death may not be enough to escape this dream."),
-        ("Ursinus Clodianus", "And you are not strong enough for the next dream."),
-        ("Lucas Vopiscus", "Next dream? What are you talking about?"),
-        ("Ursinus Clodianus", "There is not just only one dream..."),
-        ("Ursinus Clodianus", "...and each one is more dangerous than the last."),
         ("Lucas Vopiscus", "How do I know that I have truly woken up?"),
         ("Ursinus Clodianus", "You don't."),
         ("Ursinus Clodianus", "Walls have ears. Meet me at the cliff in the west."),
@@ -498,8 +683,7 @@ hidden_scenes = {
         ("Lucas Vopiscus", "I just want to wake up."),
         ("Prudentius Stolo", "Even by taking other dreamers' lives?"),
         ("Prudentius Stolo", "To sacrifice others for your own redemption?"),
-        ("Prudentius Stolo", "Why bother waking up? I woke up a few times from other dreams."),
-        ("Prudentius Stolo", "I like it here best."),
+        ("Prudentius Stolo", "Why bother waking up? I like it here best."),
         ("Lucas Vopiscus", "Frankly, I don't give a damn about your feelings or your desire to stay here."),
         ("Lucas Vopiscus", "I just want to leave."),
         ("Prudentius Stolo", "I see we are at an impasse."),

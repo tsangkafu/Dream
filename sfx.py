@@ -66,7 +66,6 @@ class SFX():
             self.player_slashs = []
             for i in range(1):
                 self.player_slashs.append(pygame.mixer.Sound(f"./sfx/gs/player_slash_{i}.wav"))
-            print(self.player_slashs)
 
             self.monster_roars = []
             for i in range(15):
@@ -80,7 +79,7 @@ class SFX():
 
     def volume_setting(self):
         self.bgm.set_volume(0.4 if self.theme == "md" else 0.04)
-        self.ambient.set_volume(0.2)
+        self.ambient.set_volume(0.2 if self.theme == "md" else 0.5)
         self.bonfire.set_volume(0.4)
         self.enemy_slash.set_volume(0.4)
         for slash in self.player_slashs: slash.set_volume(0.7)

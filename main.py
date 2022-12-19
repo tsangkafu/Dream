@@ -12,7 +12,7 @@ class Game:
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         pygame.display.set_caption("Dream")
         self.clock = pygame.time.Clock()
-        self.level = Level("gs", self.screen)
+        self.level = Level("md", self.screen)
         self.changed_level = True
 
     def run(self):

@@ -75,7 +75,7 @@ class EventManager():
                     self.dialog.unlock_scene([402, 403], [302, 303])
 
                 if 403 in self.dialog.finished_scenes:
-                    self.player.items.remove("Dismal Head")
+                    self.level.player.items.remove("Dismal Head")
 
             # revenge to Ursinus after bonehand is killed
             if 14.5 in self.dialog.finished_scenes or 502.5 in self.dialog.finished_scenes:
@@ -92,6 +92,15 @@ class EventManager():
                 self.dialog.unlock_scene([400, 401], [305])
 
             """
+            HP recover event
+            """
+            if 301 in self.dialog.finished_scenes:
+                for NPC in self.level.npc_sprites:
+                    if NPC.name == "Prudentius Stolo" and not NPC.help_recover:
+                        NPC.help_recover = True
+                        self.level.player.hp = self.level.player.max_hp
+
+            """
             Handle scenes related to collision
             """
             for node in self.level.node_sprites:
@@ -102,8 +111,8 @@ class EventManager():
                 if node.ab_pos == (7, 13):
                     self.encounter(node, 1, 2, 0)
                 # bonfire 1
-                if node.ab_pos == (4, 12):
-                    self.encounter(node, 8, 9, 3)
+                if node.ab_pos == (2, 10):
+                    self.encounter(node, 3, 3, -1)
                 # bonfire 2
                 if node.ab_pos == (3, 5):
                     self.encounter(node, 10, 10, -1)
@@ -114,8 +123,8 @@ class EventManager():
                 if node.ab_pos == (6, 11):
                     self.encounter(node, 6, 7, 2)
                 # bowel skinner
-                if node.ab_pos == (2, 10):
-                    self.encounter(node, 3, 3, -1)
+                if node.ab_pos == (4, 12):
+                    self.encounter(node, 8, 9, 3)
                 # phantomfreak boss fight
                 if node.ab_pos == (1, 15):
                     if 12 not in self.dialog.finished_scenes and 12.5 not in self.dialog.finished_scenes:
@@ -290,6 +299,16 @@ class EventManager():
                 # francesco pistolero
                 if node.ab_pos == (7, 2):
                     self.encounter(node, 73, 74, 31)
+                # bonfire 1
+                if node.ab_pos == (1, 9):
+                    self.encounter(node, 75, 75, -1)
+                # bonfire 2
+                if node.ab_pos == (8, 13):
+                    self.encounter(node, 76, 76, -1)
+                # bonfire 3
+                if node.ab_pos == (0, 6):
+                    if "Head" in self.level.player.items and 76 in self.dialog.finished_scenes:
+                        self.encounter(node, 77, 77, -1)
                 
 
         elif self.level.theme == "cp":

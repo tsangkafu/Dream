@@ -16,6 +16,8 @@ class NPC(pygame.sprite.Sprite):
         self.exp = exp
         self.items = items
         self.money = money
+        # indicate if talking with the NPC help player to recover HP
+        self.help_recover = False
         # offset of the position of the enemy to match different scene
         self.h_offset = h_offset
         try:
