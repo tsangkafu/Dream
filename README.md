@@ -1,6 +1,13 @@
 # Dream
 COMP4555 - Final Project
 
+![image](https://user-images.githubusercontent.com/47711510/208607673-8fa9e8c6-73d4-4e64-9c8b-975c0105f5f0.png)
+![image](https://user-images.githubusercontent.com/47711510/208607713-e427924b-4fe2-4ada-b8cc-30ed6012cd68.png)
+![image](https://user-images.githubusercontent.com/47711510/208607735-287b67a7-3686-4233-85bc-fcf894d6f0dc.png)
+![image](https://user-images.githubusercontent.com/47711510/208607752-773e2f17-a08a-4381-8e09-9ac2c37b7fff.png)
+![image](https://user-images.githubusercontent.com/47711510/208607803-7aba39df-93ec-4b75-8a61-26b3c5c45433.png)
+![image](https://user-images.githubusercontent.com/47711510/208607833-44351b07-1d5d-4bef-8b48-c6454e13356e.png)
+
 ## Basic Mechanism
 - You need to utilize your equipment in almost every fight.
 - Some fight does not require equipment to win, that's when you can stack up some equipment for later fight.
