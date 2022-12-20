@@ -25,7 +25,7 @@ Common behaviors in different levels.
 class Level:
     def __init__(self):
         # md = medieval, gs = gangster, cp = cyberpunk
-        self.theme = "gs"
+        self.theme = "md"
         self.md_graph = MEDIEVAL_GRAPH
         self.gs_graph = GANGSTER_GRAPH
         self.reset_level()
