@@ -384,7 +384,7 @@ scenes = {
         # bonfire 2
         ("Lucio Santarossa", "Knock knock."),
         ("Bartender", "What brings Lucio here, who is busy being hunted by Noitpmeder?"),
-        ("Lucio Santarossa", "I heard the cop just seized the entire shipment yesterday."),
+        ("Lucio Santarossa", "I heard the cops just seized the entire shipment yesterday."),
         ("Bartender", "You heard right. That's the usual routine."),
         ("Bartender", "Noitpmeder takes a cut of our profits..."),
         ("Bartender", "...and then the cops come in and take the rest."),

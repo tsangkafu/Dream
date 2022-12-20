@@ -415,7 +415,7 @@ class Level:
         self.create_map()
 
         self.cursor = Cursor(pygame.mouse.get_pos(), self.theme)
-        self.dialog = DialogManager(self.screen, self.scene_sprites, self.sfx)
+        self.dialog = DialogManager(self.screen, self.scene_sprites, self.sfx, self.theme)
         self.battle = Battle(self.screen, self.theme, self.player, self.sfx)
 
         # the status used to pass back to the Game class

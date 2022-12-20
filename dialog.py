@@ -7,7 +7,7 @@ from settings import *
 from npc import NPC
 
 class DialogManager():
-    def __init__(self, screen, scene_sprites, sfx):
+    def __init__(self, screen, scene_sprites, sfx, theme):
         # the sprite group where every sprite has dialogs
         self.scene_sprites = scene_sprites
         
@@ -15,7 +15,7 @@ class DialogManager():
         self.screen = screen
         self.sfx = sfx
         # frame of the dialog
-        self.image = self.get_image("md")
+        self.image = self.get_image(theme)
         self.rect = self.image.get_rect()
 
         # the position of the dialog box
