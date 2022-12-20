@@ -16,7 +16,7 @@ class Player(pygame.sprite.Sprite):
         self.hp = 100
         self.exp = 0
         self.exp_to_upgrade = 100
-        self.attack = 20
+        self.attack = 20 if self.theme == "md" else 120
         self.defense = 4
         self.money = 0
         self.items = []
@@ -96,7 +96,7 @@ class Player(pygame.sprite.Sprite):
             self.exp = self.exp - self.exp_to_upgrade
             self.exp_to_upgrade *= 1.5
             self.max_hp = self.level * 30 + 80
-            self.attack = self.level * 5 + 15
+            self.attack = self.level * 7 + 15
             self.defense = self.level * 4
             self.hp = self.max_hp
 

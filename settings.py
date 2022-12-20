@@ -49,7 +49,7 @@ ENEMIES = {
         "name": "Stone Mumbler",
         "max_hp": 80,
         "hp": 80,
-        "attack": 13,
+        "attack": 15,
         "defense": 3,
         "exp": 50,
         "items": [],
@@ -61,9 +61,9 @@ ENEMIES = {
         "name": "Taintpaw",
         "max_hp": 120,
         "hp": 120,
-        "attack": 20,
+        "attack": 25,
         "defense": 5,
-        "exp": 70,
+        "exp": 100,
         "items": ["Taintpaw"],
         "money": 80,
         "h_offset": 20,
@@ -71,11 +71,11 @@ ENEMIES = {
     2: {
         "theme": "md",
         "name": "Corpsesword",
-        "max_hp": 300,
-        "hp": 300,
-        "attack": 200,
+        "max_hp": 550,
+        "hp": 550,
+        "attack": 165,
         "defense": 10,
-        "exp": 500,
+        "exp": 2500,
         "items": ["Corpsesword", "Myrkul's Mirror"],
         "money": 30,
         "h_offset": 0,
@@ -85,7 +85,7 @@ ENEMIES = {
         "name": "Bowel Skinner",
         "max_hp": 40,
         "hp": 40,
-        "attack": 15,
+        "attack": 18,
         "defense": 3,
         "exp": 50,
         "items": ["Honor's Call"],
@@ -97,9 +97,9 @@ ENEMIES = {
         "name": "Phantomfreak",
         "max_hp": 300,
         "hp": 300,
-        "attack": 45,
-        "defense": 15,
-        "exp": 500,
+        "attack": 55,
+        "defense": 0,
+        "exp": 760,
         "items": ["Extinction", "Iron Oath"],
         "money": 30,
         "h_offset": 0,
@@ -107,11 +107,11 @@ ENEMIES = {
     5: {
         "theme": "md",
         "name": "Bonehand",
-        "max_hp": 120,
-        "hp": 120,
-        "attack": 35,
+        "max_hp": 130,
+        "hp": 130,
+        "attack": 45,
         "defense": 10,
-        "exp": 250,
+        "exp": 350,
         "items": ["Toothpick"],
         "money": 30,
         "h_offset": -40,
@@ -121,7 +121,7 @@ ENEMIES = {
         "name": "Dreadsnare",
         "max_hp": 140,
         "hp": 140,
-        "attack": 30,
+        "attack": 37,
         "defense": 5,
         "exp": 150,
         "items": ["Gladius", "Conquest's Cuisses"],
@@ -133,7 +133,7 @@ ENEMIES = {
         "name": "Defiant Hunter",
         "max_hp": 150,
         "hp": 150,
-        "attack": 35,
+        "attack": 55,
         "defense": 15,
         "exp": 140,
         "items": ["Suspension"],
@@ -145,7 +145,7 @@ ENEMIES = {
         "name": "Flamepod",
         "max_hp": 200,
         "hp": 200,
-        "attack": 40,
+        "attack": 53,
         "defense": 30,
         "exp": 450,
         "items": ["Raddle", "Flint"],
@@ -155,24 +155,24 @@ ENEMIES = {
     9: {
         "theme": "md",
         "name": "Grimescream",
-        "max_hp": 250,
-        "hp": 250,
-        "attack": 70,
+        "max_hp": 300,
+        "hp": 300,
+        "attack": 100,
         "defense": 20,
         "exp": 700,
-        "items": ["Ataraxia", "Glory of Gond"],
+        "items": ["Ataraxia", "Glory of Gond", "Monster's Blood"],
         "money": 30,
         "h_offset": 0,
         "sound": 7},
     10: {
         "theme": "md",
         "name": "Cindersword",
-        "max_hp": 150,
-        "hp": 150,
-        "attack": 80,
+        "max_hp": 200,
+        "hp": 200,
+        "attack": 90,
         "defense": 5,
         "exp": 600,
-        "items": ["Infinitum", "Feral Plackart"],
+        "items": ["Infinitum", "Cindersword"],
         "money": 30,
         "h_offset": 0,
         "sound": 12},
@@ -181,10 +181,10 @@ ENEMIES = {
         "name": "Bladetalon",
         "max_hp": 350,
         "hp": 350,
-        "attack": 80,
+        "attack": 115,
         "defense": 20,
         "exp": 850,
-        "items": ["Kinslayer"],
+        "items": ["Kinslayer", "Feral Plackart"],
         "money": 30,
         "h_offset": 0,
         "sound": 5},
@@ -193,10 +193,10 @@ ENEMIES = {
         "name": "Behemoth",
         "max_hp": 500,
         "hp": 500,
-        "attack": 80,
-        "defense": 40,
+        "attack": 135,
+        "defense": 30,
         "exp": 1500,
-        "items": ["Heartseeker"],
+        "items": ["Heartseeker", "Behemoth's Tooth"],
         "money": 30,
         "h_offset": 0,
         "sound": 13},
@@ -205,10 +205,10 @@ ENEMIES = {
         "name": "Mournfoot",
         "max_hp": 300,
         "hp": 300,
-        "attack": 70,
-        "defense": 30,
+        "attack": 64,
+        "defense": 25,
         "exp": 700,
-        "items": [],
+        "items": ["Monster's Blood", "Verdict"],
         "money": 30,
         "h_offset": -40,
         "sound": 10},
@@ -217,9 +217,9 @@ ENEMIES = {
         "name": "Dismal Abortion",
         "max_hp": 250,
         "hp": 250,
-        "attack": 45,
+        "attack": 53,
         "defense": 35,
-        "exp": 500,
+        "exp": 900,
         "items": ["Dismal Head"],
         "money": 30,
         "h_offset": 0,
@@ -227,22 +227,22 @@ ENEMIES = {
     15: {
         "theme": "md",
         "name": "MAIRE",
-        "max_hp": 400,
-        "hp": 400,
+        "max_hp": 500,
+        "hp": 500,
         "attack": 110,
-        "defense": 10,
+        "defense": 20,
         "exp": 1500,
-        "items": ["Artificer's Opus"],
+        "items": ["Artificer's Opus", "Monster's Blood"],
         "money": 30,
         "h_offset": 150,
         "sound": 9},
     16: {
         "theme": "md",
         "name": "URSINUS",
-        "max_hp": 350,
-        "hp": 350,
-        "attack": 60,
-        "defense": 10,
+        "max_hp": 370,
+        "hp": 370,
+        "attack": 105,
+        "defense": 15,
         "exp": 650,
         "items": ["Tyrant's Crown"],
         "money": 30,
@@ -251,11 +251,11 @@ ENEMIES = {
     17: {
         "theme": "md",
         "name": "PRUDDENTIUS",
-        "max_hp": 100,
-        "hp": 100,
-        "attack": 14,
-        "defense": 5,
-        "exp": 80,
+        "max_hp": 750,
+        "hp": 750,
+        "attack": 170,
+        "defense": 40,
+        "exp": 3500,
         "items": ["Arcane Pauldron"],
         "money": 30,
         "h_offset": 0,
@@ -265,21 +265,21 @@ ENEMIES = {
         "name": "EGNATIUS",
         "max_hp": 500,
         "hp": 500,
-        "attack": 90,
-        "defense": 50,
-        "exp": 2000,
-        "items": ["Nerves of Steel"],
+        "attack": 130,
+        "defense": 90,
+        "exp": 2500,
+        "items": ["Nerves of Steel", "Sanity"],
         "money": 30,
         "h_offset": 0,
         "sound": 12},
     19: {
         "theme": "md",
         "name": "IDUMA",
-        "max_hp": 100,
-        "hp": 100,
-        "attack": 14,
-        "defense": 5,
-        "exp": 80,
+        "max_hp": 2100,
+        "hp": 2100,
+        "attack": 170,
+        "defense": 15,
+        "exp": 5000,
         "items": ["Mercy"],
         "money": 30,
         "h_offset": 100,
@@ -296,7 +296,7 @@ ENEMIES = {
         "items": [],
         "money": 30,
         "h_offset": 100,
-        "sound": 11},
+        "sound": -1},
     21: {
         "theme": "gs",
         "name": "Pietro Ferocious",
@@ -308,7 +308,7 @@ ENEMIES = {
         "items": [],
         "money": 30,
         "h_offset": 100,
-        "sound": 11},
+        "sound": -1},
     22: {
         "theme": "gs",
         "name": "Frankie Blades",
@@ -320,8 +320,7 @@ ENEMIES = {
         "items": [],
         "money": 30,
         "h_offset": 100,
-        "sound": 11
-    },
+        "sound": -1},
     23: {
         "theme": "gs",
         "name": "Davide Coldblooded",
@@ -333,8 +332,7 @@ ENEMIES = {
         "items": [],
         "money": 30,
         "h_offset": 100,
-        "sound": 11
-    },
+        "sound": -1},
     24: {
         "theme": "gs",
         "name": "Angelo The Animal",
@@ -346,8 +344,7 @@ ENEMIES = {
         "items": [],
         "money": 30,
         "h_offset": 100,
-        "sound": 11
-    },
+        "sound": -1},
     25: {
         "theme": "gs",
         "name": "Carlo Hammer",
@@ -359,8 +356,7 @@ ENEMIES = {
         "items": [],
         "money": 30,
         "h_offset": 100,
-        "sound": 11
-    },
+        "sound": -1},
     26: {
         "theme": "gs",
         "name": "Johnny Hands",
@@ -372,8 +368,7 @@ ENEMIES = {
         "items": ["Head"],
         "money": 30,
         "h_offset": 100,
-        "sound": 11
-    },
+        "sound": -1},
     27: {
         "theme": "gs",
         "name": "Vito Savage",
@@ -385,8 +380,7 @@ ENEMIES = {
         "items": [],
         "money": 30,
         "h_offset": 100,
-        "sound": 11
-    },
+        "sound": -1},
     28: {
         "theme": "gs",
         "name": "Antonio Viper",
@@ -398,8 +392,7 @@ ENEMIES = {
         "items": [],
         "money": 30,
         "h_offset": 100,
-        "sound": 11
-    },
+        "sound": -1},
     29: {
         "theme": "gs",
         "name": "Incendiary Giovanni",
@@ -411,8 +404,7 @@ ENEMIES = {
         "items": [],
         "money": 30,
         "h_offset": 100,
-        "sound": 11
-    },
+        "sound": -1},
     30: {
         "theme": "gs",
         "name": "Salvatore Scarface",
@@ -424,8 +416,7 @@ ENEMIES = {
         "items": [],
         "money": 30,
         "h_offset": 100,
-        "sound": 11
-    },
+        "sound": -1},
     31: {
         "theme": "gs",
         "name": "Francesco Pistolero",
@@ -437,8 +428,7 @@ ENEMIES = {
         "items": [],
         "money": 30,
         "h_offset": 100,
-        "sound": 11
-    },
+        "sound": -1},
 }
 
 
@@ -449,8 +439,8 @@ ITEMS = {
     # weapons
     "toothpick": {
         "type": 1,
-        "attack": 30,
-        "defense": 5,
+        "attack": 31,
+        "defense": 9,
         "value": 5
     },
     "gladius": {
@@ -467,13 +457,13 @@ ITEMS = {
     },
     "heartseeker": {
         "type": 1,
-        "attack": 80,
+        "attack": 70,
         "defense": 0,
         "value": 15
     },
     "kinslayer": {
         "type": 1,
-        "attack": 35,
+        "attack": 39,
         "defense": 0,
         "value": 18
     },
@@ -491,14 +481,14 @@ ITEMS = {
     },
     "corpsesword": {
         "type": 1,
-        "attack": 40,
+        "attack": 60,
         "defense": 10,
         "value": 50
     },
     "raddle": {
         "type": 1,
         "attack": 60,
-        "defense": -15,
+        "defense": -20,
         "value": 50
     },
     "verdict": {
@@ -509,27 +499,45 @@ ITEMS = {
     },
     "suspension": {
         "type": 1,
-        "attack": 15,
-        "defense": 5,
+        "attack": 18,
+        "defense": 4,
         "value": 50
     },
     "ataraxia": {
         "type": 1,
         "attack": 35,
+        "defense": 5,
+        "value": 50
+    },
+    "sanity": {
+        "type": 1,
+        "attack": 60,
+        "defense": 30,
+        "value": 50
+    },
+    "cindersword": {
+        "type": 1,
+        "attack": 40,
         "defense": 0,
+        "value": 50
+    },
+    "behemoth's_tooth": {
+        "type": 1,
+        "attack": 50,
+        "defense": 20,
         "value": 50
     },
     # shields
     "artificer's_opus": {
         "type": 2,
-        "attack": 15,
-        "defense": 40,
+        "attack": 0,
+        "defense": 100,
         "value": 50
     },
     "myrkul's_mirror": {
         "type": 2,
-        "attack": 20,
-        "defense": 10,
+        "attack": 15,
+        "defense": 42,
         "value": 50
     },
     "iron_oath": {
@@ -547,37 +555,37 @@ ITEMS = {
     "feral_plackart": {
         "type": 2,
         "attack": 0,
-        "defense": 30,
+        "defense": 40,
         "value": 50
     },
     "infinitum": {
         "type": 2,
-        "attack": 15,
-        "defense": 15,
+        "attack": 14,
+        "defense": 19,
         "value": 50
     },
     "arcane_pauldron": {
         "type": 2,
-        "attack": 20,
-        "defense": 10,
+        "attack": 75,
+        "defense": 85,
         "value": 50
     },
     "glory_of_gond": {
         "type": 2,
-        "attack": 20,
-        "defense": 20,
+        "attack": 16,
+        "defense": 22,
         "value": 50
     },
     "nerves_of_steel": {
         "type": 2,
-        "attack": 20,
-        "defense": 10,
+        "attack": 10,
+        "defense": 50,
         "value": 50
     },
     "tyrant's_crown": {
         "type": 2,
-        "attack": 10,
-        "defense": 60,
+        "attack": 12,
+        "defense": 54,
         "value": 50
     },
     # items
@@ -599,11 +607,17 @@ ITEMS = {
         "defense": 0,
         "value": 18
     },
+    "monster's_blood": {
+        "type": 0,
+        "attack": 0,
+        "defense": 0,
+        "value": 18
+    },
 
     # chapter 2 items
     "head": {
         "type": 0,
-        "attack": 999,
+        "attack": 0,
         "defense": 0,
         "value": 18
     },

@@ -296,6 +296,20 @@ class Level:
                                             node.node_type = "bonfire"
                                             node.image = node.get_image(node.node_type)
                                             self.sfx.fight_channel.play(self.sfx.reignite)
+
+                                # using mercy will enable the next level
+                                if item.name == "Mercy":
+                                    # play some slash sound
+                                    self.sfx.fight_channel.play(self.sfx.player_slashs[random.randint(0, len(self.sfx.player_slashs) - 1)])
+                                    self.sfx.fight_channel_two.play(self.sfx.blood)
+                                    self.sfx.fight_channel_three.play(self.sfx.scream)
+                                    # go to next level
+                                    self.reset_level("gs")
+                                    
+                                if item.name == "Monster's Blood":
+                                    self.player.hp = self.player.max_hp
+                                    self.sfx.fight_channel.play(self.sfx.swallow)
+                                    self.player.items.remove(item.name)
                             
                             # setting this flag will result in fixing selected item constantly showing
                             self.equipment.changing_item = True
@@ -349,8 +363,13 @@ class Level:
                 if col == "B":
                     Node(self.theme, (x, y), (j, i), "boss", [self.node_sprites])
 
-    def reset_level(self):
+    def reset_level(self, theme = None):
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
+
+        if theme != None:
+            self.theme = theme
+
+
         self.sfx = SFX(self.theme)
 
         # the scene has been modified, back up to its origin form
@@ -393,8 +412,8 @@ class Level:
         # the status used to pass back to the Game class
         # -1 = in game menu
         # 0 = gameover
-        # 1 = in battle
-        self.status = -1
+        # 1 = in world
+        self.status = -1 if theme == None else 1
         self.status_bar = Status(self.screen, self.ui_sprites, self.theme, self.player)
         self.event = EventManager(self, self.dialog)
         # indicating whether the player is in village

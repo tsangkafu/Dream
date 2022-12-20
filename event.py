@@ -53,9 +53,10 @@ class EventManager():
             # after talking to Maire, unlock more Egnatius dialogs
             if 508 in self.dialog.finished_scenes:
                 self.dialog.unlock_scene([504])
-            # after killing Maire, unlock more Egnatius dialogs
+            # after killing Maire, unlock more Egnatius dialogs, also remove the previous if not finished
             if 403 in self.dialog.finished_scenes:
-                self.dialog.unlock_scene([506])
+                list_to_remove = [304, 503] if 508 not in self.dialog.finished_scenes else [304, 503, 504]
+                self.dialog.unlock_scene([506], list_to_remove)
             # after killing Maire and talking with Engatius, unlock Prudentius dialogs
             if 506 in self.dialog.finished_scenes:
                 # also remove previous Predentius scene
@@ -94,13 +95,6 @@ class EventManager():
             """
             HP recover event
             """
-            if 301 in self.dialog.finished_scenes:
-                for NPC in self.level.npc_sprites:
-                    if NPC.name == "Prudentius Stolo" and not NPC.help_recover:
-                        NPC.help_recover = True
-                        self.level.player.hp = self.level.player.max_hp
-                        self.level.sfx.plot_channel.play(self.level.sfx.healing)
-
             if 305 in self.dialog.finished_scenes:
                 for NPC in self.level.npc_sprites:
                     if NPC.name == "Iduma Macer" and not NPC.help_recover:

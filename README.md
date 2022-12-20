@@ -8,6 +8,8 @@ Ambient Sound Effect by <a href="https://pixabay.com/users/666herohero-25759907/
 
 Healing Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=5856">Pixabay</a>
 
+Swallow Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=14682">Pixabay</a>
+
 Walking Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6133">Pixabay</a>
 
 All Player Slash and Miss Sound Effect from <a href="https://www.youtube.com/watch?v=EgRvVq8mStE&ab_channel=IsolationMusic">YouTube</a>

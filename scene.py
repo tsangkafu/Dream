@@ -36,7 +36,8 @@ scenes = {
         ("Lucas Vopiscus", "A woman stands right at the corner."),
         ("Lucas Vopiscus", "Obviously not a hospitable woman.")],
     9: [
-        ("Lucas Vopiscus", "What did I just kill.")],
+        ("Lucas Vopiscus", "What in the world did I just defeat?"),
+        ("Lucas Vopiscus", "Was that some kind of monster?")],
     10: [
         # second bonfire
         ("Lucas Vopiscus", "Bonfire..."),
@@ -67,7 +68,8 @@ scenes = {
         ("Lucas Vopiscus", "Goddamned Glolin.")],
     14.5: [
         ("Lucas Vopiscus", "Rest in peace."),
-        ("Lucas Vopiscus", "I can feel there is a greater evil in front.")],
+        ("Lucas Vopiscus", "I can sense that there is a greater evil lurking ahead."),
+        ("Lucas Vopiscus", "Time to arm myself for what's to come.")],
     15: [
         # dreadsnare
         ("Dreadsnare", "...")],
@@ -104,7 +106,7 @@ scenes = {
         ("Cindersword", "We are all just ghosts haunting this dream world."),
         ("Cindersword", "Bring it on, dreamer. This will be your last fight.")],
     24: [
-        ("Lucas Vopiscus", "Another soul lost to the endless cycle of this dream.")],
+        ("Lucas Vopiscus", "Another soul lost in the endless cycle of this dream.")],
     25: [
         # bladetalon
         ("Bladetalon", "You're not welcome here, dreamer."),
@@ -139,7 +141,7 @@ scenes = {
     32: [
         ("Lucas Vopiscus", "I did what I needed to. Now rest.")],
     32.5: [
-        ("Lucas Vopiscus", "A wretched soul...")],
+        ("Lucas Vopiscus", "A wretched soul.")],
 
     # reminder
     40: [
@@ -149,7 +151,7 @@ scenes = {
     ],
     41: [
         ("Lucas Vopiscus", "Ursinus, I stand ready to face you, my weapon in hand."),
-        ("Lucas Vopiscus", "Time to redeem yourself.")
+        ("Lucas Vopiscus", "Time to truly redeem yourself.")
     ],
 
     # chapter 2
@@ -442,9 +444,6 @@ scenes = {
         ("Lucio Santarossa", "I'll take care of the rest."),
     ],
 
-    
-
-
     # system dialog / voice over
     200: [
         (" ", "You wake up from the dream to get into another."),
@@ -464,8 +463,7 @@ scenes = {
         ("Lucas Vopiscus", "I want to know who I am."),
         ("Prudentius Stolo", "That's easy to answer. You're a stupid and arrogant fool, and that is enough."),
         (" ", "Prudentius does not want to continue the conversation."),
-        (" ", "As if by magic, your wounds are suddenly healed."),
-        ("Lucas Vopiscus", "What happened?")],
+        ("Lucas Vopiscus", "What a prick.")],
     302: [
         ("Lucas Vopiscus", "Greeting."),
         ("Maire Whelani", "...")],
@@ -504,7 +502,8 @@ hidden_scenes = {
     401: [
         ("Lucas Vopiscus", "It was hubris that led you to this ignominious end, Iduma."),
         ("Lucas Vopiscus", "Burn in hell and you shall never dream again."),
-        ("Lucas Vopiscus", "Now, it is time to kill myself again.")],
+        ("Lucas Vopiscus", "Now, it is time to kill myself again."),
+        (" ", "Use 'Mercy' in your inventory.")],
     402: [
     # Maire Whelani
         ("Maire Whelani", "Finally, someone brought it...here. Now I can wake...wake up..."),
@@ -536,7 +535,7 @@ hidden_scenes = {
         (" ", "One thing you can be sure this time - he is laughing."),
         ("Lucas Vopiscus", "May God grant me vengeance...")],
     405: [
-        ("Lucas Vopiscus", "...")],
+        ("Lucas Vopiscus", "Now, seek redemption in the depths of hell.")],
     406: [
     # Egnatius Barbatus
         ("Egnatius Barbatus", "Your gravitation is getting stronger with every life you take."),
@@ -634,8 +633,8 @@ hidden_scenes = {
     502.5: [
         # dialog after being pushed down from the cliff and already killed bonehand before
         ("Lucas Vopiscus", "There is no way going back up from here."),
-        ("Lucas Vopiscus", "Turned out I did redeem you before, Ursinus."),
-        ("Lucas Vopiscus", "Now, I am your redemption. I will go haunt you.")],
+        ("Lucas Vopiscus", "Ursinus. You thought Bonehand would be the one to finish me off..."),
+        ("Lucas Vopiscus", "...but you clearly underestimated me.")],
     503: [
         # Egnatius dialog after being asked by Ursinus to go to the cliff
         ("Lucas Vopiscus", "Ursinus told me to go to the cliff, said somebody was listening to us."),
