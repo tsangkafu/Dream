@@ -42,3 +42,5 @@ COMP4555 - Final Project
 
 ## Goal
 Both theme require you to kill most of the enemies to trigger certain dialog or actions that can bring you to next theme.
+
+Powered by ChatGPT, NovalAI, and Dream by WOMBO to generate assets and ideas.
