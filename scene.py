@@ -19,11 +19,10 @@ scenes = {
         ("Lucas Vopiscus", "But I cannot feel the warmth.")],
     4: [
         # taintpaw
-        ("Taintpaw", "..."),
         ("Lucas Vopiscus", "I can hear it behind me."),
-        ("Lucas Vopiscus", "Please give me strength.")],
+        ("Taintpaw", "...")],
     5: [
-        ("Lucas Vopiscus", "I am getting better with every battle I face.")],
+        ("Lucas Vopiscus", "I am getting better.")],
     6: [
         # corpsesword
         ("Lucas Vopiscus", "The smell of death....this does not feel right!")],
@@ -36,8 +35,7 @@ scenes = {
         ("Lucas Vopiscus", "A woman stands right at the corner."),
         ("Lucas Vopiscus", "Obviously not a hospitable woman.")],
     9: [
-        ("Lucas Vopiscus", "What in the world did I just defeat?"),
-        ("Lucas Vopiscus", "Was that some kind of monster?")],
+        ("Lucas Vopiscus", "What in the world did I just kill?")],
     10: [
         # second bonfire
         ("Lucas Vopiscus", "Bonfire..."),
@@ -51,7 +49,7 @@ scenes = {
         ("Lucas Vopiscus", "Pull all your dirty tricks on me, Ursinus."),
         ("Lucas Vopiscus", "I will end all these tortured souls and then end you.")],
     12: [
-        ("Lucas Vopiscus", "I can't believe I defeated it.")],
+        ("Lucas Vopiscus", "Never thought I'd be able to take down such a formidable foe.")],
     12.5: [
         ("Lucas Vopiscus", "I shall now come get you. Don't disappoint me, Ursinus.")],
     13: [
@@ -61,9 +59,9 @@ scenes = {
         # bondhand
         ("Lucas Vopiscus", "There is no way going back up from here."),
         ("Lucas Vopiscus", "This is a sandfield, he does not want me to die right away."),
-        ("Lucas Vopiscus", "And he was certain that I could not make my way back."),
+        ("Lucas Vopiscus", "And he is so confident that that I could not make my way back."),
         ("Bonehand", "Ursinus..."),
-        ("Lucas Vopiscus", "I am sorry that you have to die twice, but I promise to end your suffer.")],
+        ("Lucas Vopiscus", "I know it's a cruel fate, having to face death twice.")],
     14: [
         ("Lucas Vopiscus", "Goddamned Glolin.")],
     14.5: [
@@ -74,11 +72,12 @@ scenes = {
         # dreadsnare
         ("Dreadsnare", "...")],
     16: [
-        ("Lucas Vopiscus", "There's a village here. Maybe I should have a look.")],
+        ("Lucas Vopiscus", "There is a villiage ahead."),
+        ("Lucas Vopiscus", "Perhaps it's worth investigating and seeing what secrets it holds.")],
     17: [
         # defiant hunter
-        ("Defiant Hunter", "Stop here."),
-        ("Lucas Vopiscus", "Wait...you can talk? Who are you?"),
+        ("Defiant Hunter", "Halt your steps here."),
+        ("Lucas Vopiscus", "Wait...you can speak? Who are you?"),
         ("Defiant Hunter", "It's not my duty do explain.")],
     18: [
         ("Lucas Vopiscus", "Every strike and parry felt like a life or death moment."),
@@ -100,23 +99,23 @@ scenes = {
         ("Lucas Vopiscus", "The echoes of screams and clashing steel still ringing in my ears.")],
     23: [
         # cindersword
-        ("Cindersword", "You should have stayed in your village."),
+        ("Cindersword", "You should have stayed in your village, dreamer."),
         ("Lucas Vopiscus", "I just want to wake up."),
         ("Cindersword", "Don't you get it?"),
         ("Cindersword", "We are all just ghosts haunting this dream world."),
         ("Cindersword", "Bring it on, dreamer. This will be your last fight.")],
     24: [
-        ("Lucas Vopiscus", "Another soul lost in the endless cycle of this dream.")],
+        ("Lucas Vopiscus", "Another soul trapped in the endless cycle of this dream.")],
     25: [
         # bladetalon
         ("Bladetalon", "You're not welcome here, dreamer."),
-        ("Lucas Vopiscus", "I didn't ask for an invitation.")],
+        ("Lucas Vopiscus", "I didn't ask for an invitation, and I am not going anywhere.")],
     26: [
         ("Lucas Vopiscus", "How many more must I slay before I find my own redemption?")],
     27: [
         # behemoth
         ("Lucas Vopiscus", "I can hear the distant roar."),
-        ("Lucas Vopiscus", "The sound echoing through this empty land.")],
+        ("Lucas Vopiscus", "Its echo reverberating through this desolate wasteland.")],
     28: [
         ("Lucas Vopiscus", "This victory means nothing in this never-ending dream.")],
     29: [
@@ -128,16 +127,15 @@ scenes = {
     31: [
         # dismal abortion
         ("Dismal Abortion", "..."),
-        ("Lucas Vopiscus", "Weird creature."),
+        ("Lucas Vopiscus", "Bizarre creature..."),
         ("Lucas Vopiscus", "Why do I have this familiar feeling?"),
-        ("Lucas Vopiscus", "I don't remember seeing this thing before..."),
-        ("Lucas Vopiscus", "...but memory in dreams is not reliable.")],
+        ("Lucas Vopiscus", "...but memory in dreams can be fickle.")],
     31.5: [
         ("Dismal Abortion", "..."),
         ("Lucas Vopiscus", "What the...is that Maire's kid?"),
         ("Lucas Vopiscus", "There is no point waking you up."),
         ("Lucas Vopiscus", "The outside world did not treat you any better."),
-        ("Lucas Vopiscus", "I will end your suffer here.")],
+        ("Lucas Vopiscus", "I'll put an end to your suffering here.")],
     32: [
         ("Lucas Vopiscus", "I did what I needed to. Now rest.")],
     32.5: [
@@ -165,7 +163,6 @@ scenes = {
         ("Mario Maddog", "You think you're clever, don't you, Lucio?"),
         ("Mario Maddog", " No one can steal from Noitpmeder and get away with it."),
         ("Lucio Santarossa", "I don't know what you're talking about."),
-        ("Lucio Santarossa", "I'm just a simple businessman trying to make a living."),
         ("Lucio Santarossa", "I have no beef with Noitpmeder."),
         ("Mario Maddog", "Don't play coy with me, Lucio. The whole organization is hunting you down."),
         ("Lucio Santarossa", "I am not too worried if the organization only sends punks like you."),
@@ -179,7 +176,6 @@ scenes = {
         ("Pietro Ferocious", "One step further and I'll turn your brain into spaghetti."),
         ("Lucio Santarossa", "Who are you? Another mafia goon trying to rob a innocent civilian?"),
         ("Pietro Ferocious", "You know exactly why I'm here, Lucio."),
-        ("Pietro Ferocious", "You swiped something from us, and now you're gonna pay the price."),
         ("Lucio Santarossa", "If you were gonna make a move, you would have done it already."),
         ("Lucio Santarossa", "So what do you want from me?"),
         ("Pietro Ferocious", "The whereabouts of the goods you stole from us."),
@@ -239,14 +235,12 @@ scenes = {
         ("Carlo Hammer", "I heard you're on the run. How's it going so far?"),
         ("Lucio Santarossa", "Not bad, I have taken care of a few pests standing in my way."),
         ("Lucio Santarossa", "I've heard of your reputation."),
-        ("Lucio Santarossa", "But you don't seem like the kind of man who'd be a member of Noitpmeder."),
-        ("Carlo Hammer", "They paid me to deal with little thieves like you."),
+        ("Carlo Hammer", "Noitpmeder paid me to deal with little thieves like you."),
         ("Carlo Hammer", "They liked working with me because I don't mind getting my hands dirty."),
         ("Carlo Hammer", "I've killed men, women, and even kids."),
         ("Lucio Santarossa", "Do you enjoy killing innocent people?"),
         ("Carlo Hammer", "It's nothing personal, Lucio. It's strictly business."),
         ("Carlo Hammer", "But to be honest, the screams of the kids are music to my ears."),
-        ("Carlo Hammer", "And soon enough your screams will constitute music too."),
         ("Lucio Santarossa", "You're just a hired muscle with a twisted brain."),
         ("Lucio Santarossa", "This is between me and Noitpmeder, you have no say in the matter."),
         ("Carlo Hammer", "I may not have a say, but I sure as hell have a lot of firepower.")
@@ -261,10 +255,8 @@ scenes = {
         ("Johnny Hands", "Big words from a man who's on the run."),
         ("Johnny Hands", "You thought you were going to take me down single-handedly?"),
         ("Lucio Santarossa", "I don't need any help taking out scum like you."),
-        ("Lucio Santarossa", "I've got more experience in my little finger..."),
-        ("Lucio Santarossa", "...than you've got in your whole body."),
         ("Johnny Hands", "You reall think I make my living using a pen?"),
-        ("Lucio Santarossa", "We'll see about that. Draw your weapon and let's settle this like men."),
+        ("Lucio Santarossa", "We'll see about that."),
     ],
     64: [
         ("Lucio Santarossa", "Looks like I'm the one standing here."),
@@ -289,7 +281,6 @@ scenes = {
         ("Antonio Viper", "..."),
         ("Lucio Santarossa", "Antonio Viper, the most skilled assassin in Noitpmeder."),
         ("Antonio Viper", "Oh, I'm flattered."),
-        ("Antonio Viper", "It's not often I get recognized by someone outside of our organization."),
         ("Lucio Santarossa", "You have a reputation for being incredibly precise and efficient."),
         ("Antonio Viper", "Efficiency is key in my line of work."),
         ("Lucio Santarossa", "But I've also heard that you have a taste for causing pain."),
@@ -311,12 +302,10 @@ scenes = {
         ("Incendiary Giovanni", "They can be very useful in certain situations."),
         ("Lucio Santarossa", "Like when you burn down a building or bomb someone to smithereens?"),
         ("Incendiary Giovanni", "Those are just a couple of my specialties."),
-        ("Incendiary Giovanni", "I've been known to take care of debts for Noitpmeder in that way."),
         ("Incendiary Giovanni", "But since you know me, then you must know what I am for."),
         ("Incendiary Giovanni", "Let's see if you can handle the heat.")
     ],
     70: [
-        ("Lucio Santarossa", "Turning your own explosives against you was a stroke of genius."),
         ("Lucio Santarossa", "That's how a true artist of destruction should end."),
         ("Lucio Santarossa", "In a blaze of glory, so to speak.")
     ],
@@ -328,7 +317,7 @@ scenes = {
         ("Lucio Santarossa", "That you lure people in with your drugs and then trap them with debts."),
         ("Salvatore Scarface", "I don't take kindly to people who don't pay their debts."),
         ("Salvatore Scarface", "And I'll do whatever it takes to get what's owed to us."),
-        ("Lucio Santarossa", "It shows. You've got quite the collection of scars."),
+        ("Lucio Santarossa", "You've got quite the collection of scars."),
         ("Lucio Santarossa", "What happened? Did you mess with the wrong person?"),
         ("Lucio Santarossa", "Or did someone finally have the balls to fight back?"),
         ("Lucio Santarossa", "But if you ask me, they only make you look uglier."),
@@ -347,19 +336,19 @@ scenes = {
         ("Lucio Santarossa", "I've smoked Johnny Hands. It's now your turn."),
         ("Francesco Pistolero", "You're just a pawn in a much bigger game."),
         ("Lucio Santarossa", "I'm tired of your riddles. Let's finish this."),
-        ("Francesco Pistolero", "We'll see about that. Let's dance, Lucio.")
+        ("Francesco Pistolero", "Let's dance, Lucio.")
     ],
     74: [
         ("Francesco Pistolero", "Welcome to the end, Lucio. Or should I say, the beginning?"),
         ("Lucio Santarossa", "This is your end, not mine."),
         ("Francesco Pistolero", "You are still dreaming, dreamer."),
         ("Lucio Santarossa", "No, you are dreaming. Francesco."),
-        ("Lucio Santarossa", "The fear of death made you lost your mind."),
+        ("Lucio Santarossa", "The fear of death made you lose your mind."),
         ("Francesco Pistolero", "Let me ask you a question, why are you here in the first place?"),
-        ("Lucio Santarossa", "I am here to fight against Noitpmeder."),
+        ("Lucio Santarossa", "I am here for Noitpmeder."),
         ("Francesco Pistolero", "Ah, Noitpmeder. The word that haunts your every move."),
         ("Francesco Pistolero", "But do you really know what it means?"),
-        ("Francesco Pistolero", "Spell it backwards, Lucio. R-E-D-E-M-P-T-I-O-N."),
+        ("Francesco Pistolero", "Spell it backwards, Lucio. R-E-D-E-M..."),
         ("Francesco Pistolero", "Now remember something?"),
         ("Lucio Santarossa", "..."),
         ("Francesco Pistolero", "The dream will always find a way..."),
@@ -376,11 +365,10 @@ scenes = {
         ("Lucio Santarossa", "I've had a long day running the rackets and I could use a stiff drink."),
         ("Bartender", "I'm sorry, Lucio. The cops made off with our entire shipment of whisky yesterday."),
         ("Bartender", "We're fresh out."),
-        ("Lucio Santarossa", "What do you mean the cops took it? Did they have a warrant or something?"),
+        ("Lucio Santarossa", "Did they have a warrant or something?"),
         ("Bartender", "No, they just burst in and took whatever they wanted."),
         ("Bartender", "And when I tried to protest, they threatened to shut us down for good."),
         ("Lucio Santarossa", "We can't just let them get away with this."),
-        ("Lucio Santarossa", "We have to do something to take back what's rightfully ours."),
         ("Bartender", "Easy there, Lucio. We can't go starting a war with the cops. They have guns..."),
         ("Bartender", "...and badges, afterall."),
         ("Lucio Santarossa", "How am I supposed to unwind without a whisky in hand?"),
@@ -390,13 +378,13 @@ scenes = {
         ("Bartender", "That I can help you with."),
         (" ", "You have a sip of that gin but it tastes like shit."),
         ("Lucio Santarossa", "I'm sick of these law enforcement taking everything we've worked for."),
-        ("Bartender", "Go to another bar in the east, they may need your help on this."),
+        ("Bartender", "Go to another bar in the east. They may need your help with something."),
         ("Lucio Santarossa", "I will pay a visit when I have time.")],
     76: [
         # bonfire 2
         ("Lucio Santarossa", "Knock knock."),
         ("Bartender", "What brings Lucio here, who is busy being hunted by Noitpmeder?"),
-        ("Lucio Santarossa", "I heard the cop just seized your entire shipment yesterday."),
+        ("Lucio Santarossa", "I heard the cop just seized the entire shipment yesterday."),
         ("Bartender", "You heard right. That's the usual routine."),
         ("Bartender", "Noitpmeder takes a cut of our profits..."),
         ("Bartender", "...and then the cops come in and take the rest."),
@@ -406,7 +394,7 @@ scenes = {
         ("Lucio Santarossa", "How do the reporters fit into all this?"),
         ("Bartender", "Some of the reporters are in cahoots with Noitpmeder."),
         ("Bartender", "They investigate our shipments and then report it to the cops."),
-        ("Bartender", "They called it the freedom of the press."),
+        ("Bartender", "That is the freedom of the press I guess."),
         ("Lucio Santarossa", "So Noitpmeder, the cops, and the journalists work together..."),
         ("Lucio Santarossa", "...to keep a monopoly on bootlegging?"),
         ("Bartender", "It's a crooked system, that's for sure."),
@@ -439,7 +427,7 @@ scenes = {
         ("Bartender", "I like your spirit, Lucio. But be careful."),
         ("Bartender", "Noitpmeder runs this whole city..."),
         ("Bartender", "...from the bootlegging to the gambling to the prostitution."),
-        ("Bartender", "They've got their fingers in every pie, and they won't go down easily."),
+        ("Bartender", "They've got their fingers in every pie."),
         (" ", "The bartender scribbles a note on a paper and slides it down the bar."),
         (" ", "The name on the paper is Francesco Pistolero."),
         ("Lucio Santarossa", "I'll take care of the rest."),
@@ -502,7 +490,6 @@ hidden_scenes = {
         ("Lucas Vopiscus", "Iduma. My redemption awaits.")],
     401: [
         ("Lucas Vopiscus", "It was hubris that led you to this ignominious end, Iduma."),
-        ("Lucas Vopiscus", "Burn in hell and you shall never dream again."),
         ("Lucas Vopiscus", "Now, it is time to kill myself again."),
         (" ", "Use 'Mercy' in your inventory.")],
     402: [
@@ -529,9 +516,7 @@ hidden_scenes = {
         ("Ursinus Clodianus", "It eludes you, even in this dream and the next..."),
         ("Ursinus Clodianus", "...if you can ever wake."),
         ("Lucas Vopiscus", "Is this your last word? Ursinus."),
-        ("Ursinus Clodianus", "The only reason that I am still here is because you are not dead."),
-        ("Ursinus Clodianus", "I will kill you for fun, but for a chance of waking up..."),
-        ("Ursinus Clodianus", "I am going to carve you up real nice."),
+        ("Ursinus Clodianus", "The only reason I am still here is because you are not dead. Yet."),
         (" ", "Ursinus begins making strange noises, curling his body in agony."), 
         (" ", "One thing you can be sure this time - he is laughing."),
         ("Lucas Vopiscus", "May God grant me vengeance...")],
@@ -541,13 +526,13 @@ hidden_scenes = {
     # Egnatius Barbatus
         ("Egnatius Barbatus", "Your gravitation is getting stronger with every life you take."),
         ("Egnatius Barbatus", "I can't let Iduma have you."),
-        ("Egnatius Barbatus", "You can't wake up before the other dreamers, either."),
+        ("Egnatius Barbatus", "You won't be able to wake up before the other dreamers, either."),
         ("Lucas Vopiscus", "What do you mean?"),
         ("Egnatius Barbatus", "Suicide victims have a harder time waking up."),
         ("Egnatius Barbatus", "They are the last to leave this dream."),
         ("Egnatius Barbatus", "Their gravitation will keep dragging other people into this dream."),
         ("Lucas Vopiscus", "Iduma committed suicide?"),
-        ("Egnatius Barbatus", "Yes, and he does not want this dream to end."),
+        ("Egnatius Barbatus", "And he does not want this dream to end."),
         ("Lucas Vopiscus", "That's why we are still alive."),
         ("Egnatius Barbatus", "All who wake up in this dream hereafter can suffer as we have done."),
         ("Egnatius Barbatus", "Lucas, I knew you long before you woke up from here."),
@@ -565,13 +550,13 @@ hidden_scenes = {
         ("Prudentius Stolo", "You eventually did it...killing your own friend."),
         ("Prudentius Stolo", "How could you sink so low, Lucas Vopiscus?"),
         ("Lucas Vopiscus", "He killed me once, now we are even."),
-        ("Lucas Vopiscus", "I saved his last remaining bit of soul manipulated by Iduma."),
+        ("Lucas Vopiscus", "I saved his last remaining shred of soul manipulated by Iduma."),
         ("Prudentius Stolo", "Iduma would not let anyone swagger over him."),
         ("Prudentius Stolo", "You did not learn a thing in this endless dream."),
         ("Lucas Vopiscus", "This dream may be a prison for our souls..."),
         ("Lucas Vopiscus", "...but it has also shown me the true meaning of redemption."),
         ("Prudentius Stolo", "Oh please, spare me the theatrics."),
-        ("Lucas Vopiscus", "There is only one redemption and you know exactly what that is."),
+        ("Lucas Vopiscus", "There is only one path to redemption, and you know exactly what it is."),
         ("Prudentius Stolo", "Then, I will turn you into a smashed animal as you wish.")],
     409: [
         ("Lucas Vopiscus", "Now, let's end this dream.")],
@@ -601,8 +586,6 @@ hidden_scenes = {
         ("Lucas Vopiscus", "How do I know that I have truly woken up?"),
         ("Ursinus Clodianus", "You don't."),
         ("Ursinus Clodianus", "Walls have ears. Meet me at the cliff in the west."),
-        ("Lucas Vopiscus", "Why should I take that risk to see a man whom I do not know?"),
-        ("Ursinus Clodianus", "Dreams are dangerous, it is not safe here either."),
         ("Ursinus Clodianus", "Now, give me a blessing. It would make my day."),
         (" ", "Ursinus does not want to continue the conversation.")],
     502: [
@@ -654,13 +637,12 @@ hidden_scenes = {
         # Egnatius dialog after talking with Maire
         ("Lucas Vopiscus", "Who is that woman?"),
         ("Egnatius Barbatus", "She killed her own kid, and ate him. It's a tragic story, really."),
-        ("Lucas Vopiscus", "You had my curiosity, but now you have my attention."),
         ("Lucas Vopiscus", "What could drive someone to do such a thing?"),
         ("Egnatius Barbatus", "She is a bit sensitive after all she has been through."),
         ("Egnatius Barbatus", "But I don't think you want to know the details."),
-        ("Lucas Vopiscus", "Is there a way to wake her up? To bring her back to reality?"),
+        ("Lucas Vopiscus", "Is there a way to wake her up?"),
         ("Egnatius Barbatus", "In the northwest, there is a cave where her kid is."),
-        ("Egnatius Barbatus", "If you can find him and bring him back to her, it might snap her out of it."),
+        ("Egnatius Barbatus", "If you can bring him back to her, it might snap her out of it."),
         ("Egnatius Barbatus", "But her sanity is gone. I don't think redemption will help at this point."),
         ("Egnatius Barbatus", "Again, I suggest you not go, because you will not make it back.")],
     505: [
@@ -671,8 +653,7 @@ hidden_scenes = {
         ("Egnatius Barbatus", "We dreamers are wretched creatures."),
         ("Lucas Vopiscus", "I doubt your last bit of humanity will help you wake up."),
         ("Egnatius Barbatus", "I abandoned my redemption long ago."),
-        ("Egnatius Barbatus", "I have been living a dog's life here in this dream..."),
-        ("Egnatius Barbatus", "..the gravitation is driving everyone insane."),
+        ("Egnatius Barbatus", "The gravitation is driving everyone insane."),
         ("Egnatius Barbatus",  "I only lack the courage to correct things."),
         ("Lucas Vopiscus", "If I have to kill to wake up, I will."),
         ("Egnatius Barbatus",  "The line between dreamer and monster is thin."),
@@ -692,16 +673,12 @@ hidden_scenes = {
         ("Prudentius Stolo", "You have executed two dreamers already, did you not?"),
         ("Lucas Vopiscus", "Only if those creatures out there do not count."),
         ("Prudentius Stolo", "I wonder why have you not lost your sanity with all those killings."),
-        ("Prudentius Stolo", "It is only a matter of time..."),
-        ("Prudentius Stolo", "...before the weight of your actions catches up to you."),
         ("Lucas Vopiscus", "You sound puny and innocent."),
         ("Prudentius Stolo", "No one is innocent in this dream."),
         ("Lucas Vopiscus", "I just want to wake up."),
-        ("Prudentius Stolo", "Even by taking other dreamers' lives?"),
-        ("Prudentius Stolo", "To sacrifice others for your own redemption?"),
+        ("Prudentius Stolo", "Even by sacrificing others for your own redemption?"),
         ("Prudentius Stolo", "Why bother waking up? I like it here best."),
         ("Lucas Vopiscus", "Frankly, I don't give a damn about your feelings or your desire to stay here."),
-        ("Lucas Vopiscus", "I just want to leave."),
         ("Prudentius Stolo", "I see we are at an impasse."),
         ("Prudentius Stolo", "Now get off, before I slide you into pieces."),
         (" ", "Prudentius does not want to continue the conversation.")],
@@ -716,7 +693,6 @@ hidden_scenes = {
         ("Lucas Vopiscus", "How many people have been dragged into this dream?"),
         ("Iduma Macer", "How many breads have you eaten in your life?"),
         ("Iduma Macer", "I did not summon them, they came for redemption."),
-        ("Lucas Vopiscus", "There is no redemption, we both know that."),
         ("Iduma Macer", "I shall not warn you twice."),
         (" ", "Iduma does not want to continue the conversation.")]
 }

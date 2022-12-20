@@ -19,7 +19,7 @@ class Player(pygame.sprite.Sprite):
         self.attack = 20 if self.theme == "md" else 90
         self.defense = 4
         self.money = 0
-        self.items = ["Mercy"]
+        self.items = []
         self.weapon = ""
         self.shield = ""
         self.screen = screen

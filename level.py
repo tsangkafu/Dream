@@ -63,7 +63,7 @@ class Level:
         self.track_cursor()
 
         # import debug window to get the abstract coordinate faster
-        debug(self.player.pos)
+        # debug(self.player.pos)
 
         pygame.display.update()
 
