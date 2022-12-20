@@ -277,7 +277,7 @@ ENEMIES = {
         "name": "IDUMA",
         "max_hp": 2100,
         "hp": 2100,
-        "attack": 170,
+        "attack": 165,
         "defense": 15,
         "exp": 5000,
         "items": ["Mercy"],
@@ -531,7 +531,7 @@ ITEMS = {
     "artificer's_opus": {
         "type": 2,
         "attack": 0,
-        "defense": 100,
+        "defense": 92,
         "value": 50
     },
     "myrkul's_mirror": {

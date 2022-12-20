@@ -1,85 +1,37 @@
 # Dream
 COMP4555 - Final Project
 
-## Medieval Theme Music
-Background Music by <a href="https://pixabay.com/users/sergequadrado-24990007/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=90162">SergeQuadrado</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=90162">Pixabay</a>
+## Basic Mechanism
+-You need to utilize your equipment in almost every fight.
+-Some fight does not require equipment to win, that's when you can stack up some equipment for later fight.
+-Bosses will drop powerful items, always save them for another boss fight.
+-You can also click on the status bar to access your inventory.
+-There's also bonfire system where you can recover your hp on the map.
+-Some monsters will drop the flint, that will light up all the faded bonfire again.
+-The bonfire is important because its one of a few ways to recover hp during the journey, some other ways include drinking monster's blood dropped by the monster, leveling up, or talking with specific NPC.
+-Its a game where different themes are put together to bring the player different feelings in each theme.
+-Each theme has different enemies, different map and different artworks, ui, etc.
 
-Ambient Sound Effect by <a href="https://pixabay.com/users/666herohero-25759907/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=21834">666HeroHero</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=21834">Pixabay</a>
+## Story
+-If you killed the monster on the node before triggering the plot, it will have different dialog.
+-NPC dialog will get updated during the course of the game. For example, you have not talk to the NPC to trigger the mission, but you fulfill the mission objectives.
 
-Healing Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=5856">Pixabay</a>
+## Theme
+- The first theme is more of a strategy game, that you need to utilize your resources to survive.
+- The second theme will start after you finish the first, it will be a totally different theme but having similiar basic mechanism such as battle and dialog, but it will be different in terms of how the story is presented.
+-The second theme has more dialog and less difficult battles, this is to allow the player to enjoy the story without worrying about being dead like they did in the first theme.
+- Dying is normal, as it is a game about an endless dream.
 
+## First Theme
+-Medieval era where enemies are weird monsters.
+-Relies heavily on battle and equipment, also the order of the node visited.
+-Village system where you can interact with different NPC.
+-You can kill every NPC if certain conditions are met.
 
-Swallow Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=14682">Pixabay</a>
+## Second theme
+-1930's Italy criminal underworld where enemies are human.
+-No village system, the bonfire node turns into a bar where you can pick up missions.
+-More linear experience.
 
-Walking Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6133">Pixabay</a>
-
-All Player Slash and Miss Sound Effect from <a href="https://www.youtube.com/watch?v=EgRvVq8mStE&ab_channel=IsolationMusic">YouTube</a>
-
-Enemy Slash Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=94367">Pixabay</a>
-
-Enemy Miss Sound Effect by <a href="https://pixabay.com/users/666herohero-25759907/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=21834">666HeroHero</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=21834">Pixabay</a>
-
-Page Turn Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=103822">Pixabay</a>
-
-Equip Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6904">Pixabay</a>
-
-Monster Die Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=85304">Pixabay</a>
-
-Blood Sound Effect by <a href="https://pixabay.com/users/studioalivioglobal-28281460/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=122253">StudioAlivioGlobal</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=122253">Pixabay</a>
-
-Falling Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6375">Pixabay</a>
-
-Monster Roar 0 Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6985">Pixabay</a>
-
-Monster Roar 1 Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6311">Pixabay</a>
-
-Monster Roar 2 Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6863">Pixabay</a>
-
-Monster Roar 3 Sound Effect from Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=86780">Pixabay</a>
-
-Monster Roar 4 Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=37570">Pixabay</a>
-
-Monster Roar 5 Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6333">Pixabay</a>
-
-Monster Roar 6 Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=47757">Pixabay</a>
-
-Monster Roar 7 Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=102957">Pixabay</a>
-
-Monster Roar 8 Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=103224">Pixabay</a>
-
-Monster Roar 9 Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=83568">Pixabay</a>
-
-Monster Roar 10 Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=83855">Pixabay</a>
-
-Monster Roar 11 Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=14469">Pixabay</a>
-
-Monster Roar 12 Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6932">Pixabay</a>
-
-Monster Roar 13 Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=36564">Pixabay</a>
-
-Monster Roar 14 Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=87519">Pixabay</a>
-
-Bonfire Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=103566">Pixabay</a>
-
-Scream Sound Effect by <a href="https://pixabay.com/users/studioalivioglobal-28281460/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=123080">StudioAlivioGlobal</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=123080">Pixabay</a>
-
-Door Open Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6038">Pixabay</a>
-
-##Mafia Theme Music
-Music by <a href="https://pixabay.com/users/qubesounds-24397640/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=121463">QubeSounds</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=121463">Pixabay</a>
-
-Ambient Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6762">Pixabay</a>
-
-Player Gunshot 0 Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=39860">Pixabay</a>
-
-Healing Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=102018">Pixabay</a>
-
-Enemy Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=40780">Pixabay</a>
-
-Bullet Shell Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=39791">Pixabay</a>
-
-Load Bullet Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=105837">Pixabay</a>
-
-All Bullet Miss Sound Effect from <a href="https://www.youtube.com/watch?v=d439JLiphkw&ab_channel=SoundEffectsFactory">YouTube</a>
-
-Bonfire Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=79384">Pixabay</a>
+## Goal
+Both theme require you to kill most of the enemies to trigger certain dialog or actions that can bring you to next theme.
