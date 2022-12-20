@@ -1,5 +1,7 @@
 from nodes import Node
 from settings import *
+from scene import scenes
+from map.gangster import GANGSTER_GRAPH
 
 class EventManager():
     def __init__(self, level, dialog):
@@ -73,7 +75,9 @@ class EventManager():
                 # if you acquire dismal head before talking with Egnatius
                 # skip over (remove) the first 2 dialogs with Maire
                 else:
-                    self.dialog.unlock_scene([402, 403], [302, 303])
+                    # if the Maire threatening scene is unlocked, then remove it
+                    list_to_remove = [302, 303, 508] if 508 in scenes else [302, 303]
+                    self.dialog.unlock_scene([402, 403], list_to_remove)
 
                 if 403 in self.dialog.finished_scenes:
                     self.level.player.items.remove("Dismal Head")
@@ -290,6 +294,13 @@ class EventManager():
                 # angelo the animal
                 if node.ab_pos == (6, 9):
                     self.encounter(node, 59, 60, 24)
+                    # unlock the route to johhny hand if the bar scene 2 is finished
+                    if 76 in self.dialog.finished_scenes:
+                        # look for johnny hands's node
+                        for target_node in self.level.node_sprites:
+                            if target_node.ab_pos == (6, 6):
+                                GANGSTER_GRAPH[node.ab_pos].append(target_node.ab_pos)
+                                node.set_neighbor(target_node)
                 # carlo hammer
                 if node.ab_pos == (4, 8):
                     self.encounter(node, 61, 62, 25)
@@ -299,6 +310,13 @@ class EventManager():
                 # vito savage
                 if node.ab_pos == (5, 4):
                     self.encounter(node, 65, 66, 27)
+                    # unlock the route to francesco pistolero if the bar scene 3 is finished
+                    if 77 in self.dialog.finished_scenes:
+                        # look for francesco pistolero's node
+                        for target_node in self.level.node_sprites:
+                            if target_node.ab_pos == (7, 2):
+                                GANGSTER_GRAPH[node.ab_pos].append(target_node.ab_pos)
+                                node.set_neighbor(target_node)
                 # antonio viper
                 if node.ab_pos == (2, 5):
                     self.encounter(node, 67, 68, 28)
@@ -308,6 +326,13 @@ class EventManager():
                 # salvatore scarface
                 if node.ab_pos == (3, 1):
                     self.encounter(node, 71, 72, 30)
+                    # unlock the route to francesco pistolero if the bar scene 3 is finished
+                    if 77 in self.dialog.finished_scenes:
+                        # look for francesco pistolero's node
+                        for target_node in self.level.node_sprites:
+                            if target_node.ab_pos == (7, 2):
+                                GANGSTER_GRAPH[node.ab_pos].append(target_node.ab_pos)
+                                node.set_neighbor(target_node)
                 # francesco pistolero
                 if node.ab_pos == (7, 2):
                     self.encounter(node, 73, 74, 31)
@@ -321,7 +346,9 @@ class EventManager():
                 if node.ab_pos == (0, 6):
                     if "Head" in self.level.player.items and 76 in self.dialog.finished_scenes:
                         self.encounter(node, 77, 77, -1)
-                
+                        # remove the item after submit
+                        if 77 in self.dialog.finished_scenes:
+                            self.level.player.items.remove("Head")
 
         elif self.level.theme == "cp":
             pass

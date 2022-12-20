@@ -20,6 +20,8 @@ class SFX():
         self.bonfire_channel = pygame.mixer.Channel(3)
         self.village_channel = pygame.mixer.Channel(4)
 
+        self.bgm_channel = pygame.mixer.Channel(8)
+
         if theme == "md":
             self.bgm = pygame.mixer.Sound("./sfx/md/world_bgm.wav")
             self.ambient = pygame.mixer.Sound("./sfx/md/ambient.wav")
@@ -59,13 +61,15 @@ class SFX():
             self.equip = pygame.mixer.Sound("./sfx/md/equip.wav")
             self.blood = pygame.mixer.Sound("./sfx/gs/blood.wav")
             self.draw_sword = pygame.mixer.Sound("./sfx/gs/draw_sword.wav")
-            self.bonfire = pygame.mixer.Sound("./sfx/md/bonfire.wav")
+            # ice sound
+            self.bonfire = pygame.mixer.Sound("./sfx/gs/bonfire.wav")
             self.scream = pygame.mixer.Sound("./sfx/md/scream.wav")
             self.door_open = pygame.mixer.Sound("./sfx/md/door_open.wav")
             self.player_miss = pygame.mixer.Sound("./sfx/gs/player_miss.wav")
             self.enemy_miss = pygame.mixer.Sound("./sfx/gs/enemy_miss.wav")
             self.falling = pygame.mixer.Sound("./sfx/md/falling.wav")
-            self.healing = pygame.mixer.Sound("./sfx/md/healing.wav")
+            # wine pouring
+            self.healing = pygame.mixer.Sound("./sfx/gs/healing.wav")
             self.reignite = pygame.mixer.Sound("./sfx/md/reignite.wav")
             self.swallow = pygame.mixer.Sound("./sfx/md/swallow.wav")
             
@@ -79,8 +83,7 @@ class SFX():
             self.monster_die = pygame.mixer.Sound("./sfx/md/monster_die.wav")
             
         self.volume_setting()
-        
-        self.bgm.play(-1)
+        self.bgm_channel.play(self.bgm, -1)
         self.ambient_channel.play(self.ambient, -1)
 
     def volume_setting(self):
@@ -88,5 +91,6 @@ class SFX():
         self.ambient.set_volume(0.2 if self.theme == "md" else 0.5)
         self.bonfire.set_volume(0.4)
         self.enemy_slash.set_volume(0.4)
+        self.scream.set_volume(0.4)
         for slash in self.player_slashs: slash.set_volume(0.7)
         for roar in self.monster_roars: roar.set_volume(0.6)

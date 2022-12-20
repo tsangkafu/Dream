@@ -8,6 +8,7 @@ Ambient Sound Effect by <a href="https://pixabay.com/users/666herohero-25759907/
 
 Healing Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=5856">Pixabay</a>
 
+
 Swallow Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=14682">Pixabay</a>
 
 Walking Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=6133">Pixabay</a>
@@ -71,6 +72,8 @@ Ambient Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source
 
 Player Gunshot 0 Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=39860">Pixabay</a>
 
+Healing Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=102018">Pixabay</a>
+
 Enemy Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=40780">Pixabay</a>
 
 Bullet Shell Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=39791">Pixabay</a>
@@ -78,3 +81,5 @@ Bullet Shell Sound Effect from <a href="https://pixabay.com/?utm_source=link-att
 Load Bullet Sound Effect from <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=105837">Pixabay</a>
 
 All Bullet Miss Sound Effect from <a href="https://www.youtube.com/watch?v=d439JLiphkw&ab_channel=SoundEffectsFactory">YouTube</a>
+
+Bonfire Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=79384">Pixabay</a>

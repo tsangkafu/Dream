@@ -367,7 +367,8 @@ scenes = {
         ("Francesco Pistolero", "Try harder in the next, HAHAHAHAHA!"),
         (" ", "Francesco Pistolero lay on the ground, defeated and unmoving."),
         (" ", "You walk away from the fallen Francesco..."),
-        (" ", "...knowing that your journey to redemption has just begun.")
+        (" ", "...knowing that your journey to redemption has just begun."),
+        (" ", "Now, use 'Mercy' again.")
     ],
     75: [
         # bonfire 1

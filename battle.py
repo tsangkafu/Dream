@@ -85,7 +85,8 @@ class Battle():
             self.enemy = enemy
             if not self.roared:
                 # play the monster sound according to their sound
-                self.sfx.fight_channel_three.play(self.sfx.monster_roars[enemy.sound])
+                if self.theme == "md":
+                    self.sfx.fight_channel_three.play(self.sfx.monster_roars[enemy.sound])
                 self.roared = True
             # copy the image to the battle object
             self.enemy_image = self.enemy.image.convert_alpha()

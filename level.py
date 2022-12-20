@@ -26,8 +26,10 @@ class Level:
     def __init__(self):
         # md = medieval, gs = gangster, cp = cyberpunk
         self.theme = "md"
+        self.md_graph = MEDIEVAL_GRAPH
+        self.gs_graph = GANGSTER_GRAPH
         self.reset_level()
-        
+
     def run(self):
         self.draw_background()
         self.sfx_handling()
@@ -304,7 +306,13 @@ class Level:
                                     self.sfx.fight_channel_two.play(self.sfx.blood)
                                     self.sfx.fight_channel_three.play(self.sfx.scream)
                                     # go to next level
-                                    self.reset_level("gs")
+                                    if self.theme == "md":
+                                        self.reset_level("gs")
+                                    else:
+                                        self.theme = "md"
+                                        self.reset_level()
+
+                                    self.player.items.remove("Mercy")
                                     
                                 if item.name == "Monster's Blood":
                                     self.player.hp = self.player.max_hp
@@ -364,18 +372,19 @@ class Level:
                     Node(self.theme, (x, y), (j, i), "boss", [self.node_sprites])
 
     def reset_level(self, theme = None):
+        # reset the theme
+        if theme != None: self.theme = theme
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
-
-        if theme != None:
-            self.theme = theme
-
-
         self.sfx = SFX(self.theme)
 
-        # the scene has been modified, back up to its origin form
+        # the scene has been modified, reset to its origin form
         for key in hidden_scenes:
             if key in scenes:
                 scenes.pop(key)
+
+        # reset the graph that has been modified
+        for key in self.gs_graph:
+            GANGSTER_GRAPH[key] = self.gs_graph[key]
 
         # get the display surface
         try:

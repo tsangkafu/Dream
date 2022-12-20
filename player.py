@@ -16,10 +16,10 @@ class Player(pygame.sprite.Sprite):
         self.hp = 100
         self.exp = 0
         self.exp_to_upgrade = 100
-        self.attack = 20 if self.theme == "md" else 120
+        self.attack = 20 if self.theme == "md" else 90
         self.defense = 4
         self.money = 0
-        self.items = []
+        self.items = ["Mercy"]
         self.weapon = ""
         self.shield = ""
         self.screen = screen
