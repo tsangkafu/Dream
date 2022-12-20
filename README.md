@@ -13,9 +13,9 @@ COMP4555 - Final Project
 - Some fight does not require equipment to win, that's when you can stack up some equipment for later fight.
 - Bosses will drop powerful items, always save them for another boss fight.
 - You can also click on the status bar to access your inventory.
-- There's also bonfire system where you can recover your hp on the map.
-- Some monsters will drop the flint, that will light up all the faded bonfire again.
-- The bonfire is important because its one of a few ways to recover hp during the journey, some other ways include drinking monster's blood dropped by the monster, leveling up, or talking with specific NPC.
+- There is also bonfire system where you can recover your hp on the map.
+- Some monster will drop the flint, that will light up all the faded bonfires again.
+- The bonfire is important because it is one of a few ways to recover hp during the journey, some other ways include drinking monster's blood dropped by the monster, leveling up, or talking with specific NPC.
 - Its a game where different themes are put together to bring the player different feelings in each theme.
 - Each theme has different enemies, different map and different artworks, ui, etc.
 
