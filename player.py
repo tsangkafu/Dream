@@ -28,9 +28,9 @@ class Player(pygame.sprite.Sprite):
         self.exiting = False
         self.walking = False
         # avatar of the character
-        self.image = pygame.image.load(os.path.join("./graphics/character", self.name.replace(" ", "_") + "_avatar.png")).convert_alpha()
+        self.image = pygame.image.load(os.path.join("./graphics/character", self.name.lower().replace(" ", "_") + "_avatar.png")).convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
-        self.large_image = pygame.image.load(os.path.join("./graphics/character", self.name.replace(" ", "_") + ".png")).convert_alpha()
+        self.large_image = pygame.image.load(os.path.join("./graphics/character", self.name.lower().replace(" ", "_") + ".png")).convert_alpha()
         self.pos = pygame.math.Vector2(pos)
         self.speed = 1.2
         self.target = pygame.math.Vector2(pos)
