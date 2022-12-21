@@ -25,7 +25,7 @@ Common behaviors in different levels.
 class Level:
     def __init__(self):
         # md = medieval, gs = gangster, cp = cyberpunk
-        self.theme = "md"
+        self.theme = "gs"
         self.md_graph = MEDIEVAL_GRAPH
         self.gs_graph = GANGSTER_GRAPH
         self.reset_level()
@@ -311,8 +311,8 @@ class Level:
                                     else:
                                         self.theme = "md"
                                         self.reset_level()
-
-                                    self.player.items.remove("Mercy")
+                                    if "Mercy" in self.player.items:
+                                        self.player.items.remove("Mercy")
                                     
                                 if item.name == "Monster's Blood":
                                     self.player.hp = self.player.max_hp
